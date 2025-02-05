@@ -1,5 +1,3 @@
-//Module 10 Assignment
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -30,7 +28,6 @@ class ContactListScreen extends StatefulWidget {
 class _ContactListScreenState extends State<ContactListScreen> {
   final TextEditingController _nameController = TextEditingController();
   final TextEditingController _numberController = TextEditingController();
-  final FocusNode _focusNode = FocusNode();
   final List<Map<String, String>> _contacts = [];
 
   void _addContact() {
@@ -38,14 +35,14 @@ class _ContactListScreenState extends State<ContactListScreen> {
     String number = _numberController.text.trim();
 
     if (name.isNotEmpty && number.isNotEmpty) {
-      setState(() {
-        _contacts.add({'name': name, 'number': number});
-      });
-      _nameController.clear();
-      _numberController.clear();
-
-      FocusScope.of(context).unfocus();
-    }
+      if(mounted){
+        setState(() {
+          _contacts.add({'name': name, 'number': number});
+        });
+        _nameController.clear();
+        _numberController.clear();
+        }
+      }
 
   }
 
@@ -53,8 +50,6 @@ class _ContactListScreenState extends State<ContactListScreen> {
     setState(() {
       _contacts.removeAt(index);
     });
-
-    FocusScope.of(context).requestFocus(_focusNode);
   }
 
   void _showDeleteDialog(int index) {
@@ -89,13 +84,13 @@ class _ContactListScreenState extends State<ContactListScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: const Text('Contact List', style: TextStyle(color: Colors.white),),
-        titleSpacing: 0,
-        centerTitle: true,
-        toolbarHeight: 70,
-        toolbarOpacity: 0.7,
-        elevation: 0,
-        backgroundColor: Colors.blueGrey,
+          title: const Text('Contact List', style: TextStyle(color: Colors.white),),
+          titleSpacing: 0,
+          centerTitle: true,
+          toolbarHeight: 70,
+          toolbarOpacity: 0.7,
+          elevation: 0,
+          backgroundColor: Colors.blueGrey,
       ),
 
       body: Padding(
@@ -139,10 +134,10 @@ class _ContactListScreenState extends State<ContactListScreen> {
                     child: ListTile(
                       leading: const Icon(Icons.person, color: Colors.brown,),
                       title: Text(
-                        _contacts[index]['name'] !,
+                        _contacts[index]['name'] ?? 'Unknown',
                         style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                       ),
-                      subtitle: Text(_contacts[index]['number']!),
+                      subtitle: Text(_contacts[index]['number'] ?? 'No number'),
                       trailing: const Icon(Icons.phone, color: Colors.blue),
                       onLongPress: () => _showDeleteDialog(index),
                     ),
