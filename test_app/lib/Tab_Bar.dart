@@ -108,7 +108,7 @@ class HomeActivity extends StatelessWidget {
           ),
           ),
 
-          body: TabBarView(children: children)
+
 
         )
     );
