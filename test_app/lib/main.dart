@@ -92,11 +92,11 @@ class HomeActivity extends StatelessWidget {
 
         floatingActionButton: FloatingActionButton(
           elevation: 10,
-          child: Icon(Icons.delete),
           backgroundColor: Colors.lightGreen,
           onPressed: (){
             MySnackBar("HeHeHeHe", context);
           },
+          child: Icon(Icons.delete),
         ),
 
         bottomNavigationBar: BottomNavigationBar(
@@ -171,9 +171,9 @@ class HomeActivity extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Container(height: 100, width: 100, child: Image.network("https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvam9iNjgwLTE2Ni1wLWwxZGJ1cTN2LnBuZw.png")),
-                Container(height: 100, width: 100, child: Image.network("https://images.rawpixel.com/image_png_600/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvam9iNjc3LTE1My1wXzEtbDE0b2ZocDQucG5n.png")),
-                Container(height: 100, width: 100, child: Image.network("https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvam9iNjc5LTExMi1wLWwxNjd4NHA3LnBuZw.png"))
+                SizedBox(height: 100, width: 100, child: Image.network("https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvam9iNjgwLTE2Ni1wLWwxZGJ1cTN2LnBuZw.png")),
+                SizedBox(height: 100, width: 100, child: Image.network("https://images.rawpixel.com/image_png_600/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvam9iNjc3LTE1My1wXzEtbDE0b2ZocDQucG5n.png")),
+                SizedBox(height: 100, width: 100, child: Image.network("https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvam9iNjc5LTExMi1wLWwxNjd4NHA3LnBuZw.png"))
 
               ],
             ),
@@ -181,7 +181,7 @@ class HomeActivity extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
 
-                ElevatedButton(onPressed: (){MyAlertDialog(context);}, child: Text("Elevated Button"), style: buttonStyle,),
+                ElevatedButton(onPressed: (){MyAlertDialog(context);}, style: buttonStyle, child: Text("Elevated Button"),),
 
               ],
             ),
