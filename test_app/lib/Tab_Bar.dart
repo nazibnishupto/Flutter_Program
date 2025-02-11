@@ -1,6 +1,12 @@
 
 import 'package:flutter/material.dart';
 
+import 'Fragment/EmailFragment.dart';
+import 'Fragment/HomeFragment.dart';
+import 'Fragment/SearchFragment.dart';
+import 'Fragment/SettingsFragment.dart';
+import 'Fragment/WalletFragment.dart';
+
 main(){
   runApp(const myApp()); //Application
 
@@ -81,10 +87,9 @@ class HomeActivity extends StatelessWidget {
 
 
     return DefaultTabController(
-        length: 8,
+        length: 5,
         child: Scaffold(
           appBar: AppBar(
-
             title: Text("MyApp"),
             titleSpacing: 10,
             centerTitle: false,
@@ -98,16 +103,25 @@ class HomeActivity extends StatelessWidget {
             ],
 
           bottom: TabBar(
-              tabs: [
-                Tab(icon: Icon(Icons.home),),
-                Tab(icon: Icon(Icons.email),),
-                Tab(icon: Icon(Icons.settings),),
-                Tab(icon: Icon(Icons.wallet),),
-                Tab(icon: Icon(Icons.search),),
+            //isScrollable: true,
+            tabs: [
+              Tab(icon: Icon(Icons.home),),
+              Tab(icon: Icon(Icons.email),),
+              Tab(icon: Icon(Icons.settings),),
+              Tab(icon: Icon(Icons.wallet),),
+              Tab(icon: Icon(Icons.search),),
+            ]
+          ),
+          ),
+          body: TabBarView(
+              children: [
+                HomeFragment(),
+                Emailfragment(),
+                Settingsfragment(),
+                Walletfragment(),
+                Searchfragment(),
               ]
           ),
-          ),
-
 
 
         )
