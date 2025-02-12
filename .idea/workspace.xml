@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b2e05f5-ab7b-4f2b-b472-c872dd2b209a" name="Changes" comment="asgmnt">
+    <list default="true" id="9b2e05f5-ab7b-4f2b-b472-c872dd2b209a" name="Changes" comment="ofc 11 feb">
+      <change afterPath="$PROJECT_DIR$/test_app/lib/Navigation.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment/lib/Module_10_Assignment.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/lib/Module_10_Assignment.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +52,7 @@
     "Flutter.Grid_View.dart.executor": "Run",
     "Flutter.List_View.dart.executor": "Run",
     "Flutter.Module_10_Assignment.dart.executor": "Run",
+    "Flutter.Navigation.dart.executor": "Run",
     "Flutter.Tab_Bar.dart.executor": "Run",
     "Flutter.main.dart (1).executor": "Run",
     "Flutter.main.dart.executor": "Run",
@@ -69,17 +70,17 @@
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
-  <component name="RunManager" selected="Flutter.Module_10_Assignment.dart">
+  <component name="RunManager" selected="Flutter.Navigation.dart">
     <configuration name="Grid_View.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/test_app/lib/Grid_View.dart" />
       <method v="2" />
     </configuration>
-    <configuration name="List_View.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/test_app/lib/List_View.dart" />
-      <method v="2" />
-    </configuration>
     <configuration name="Module_10_Assignment.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/Assignment/lib/Module_10_Assignment.dart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Navigation.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/test_app/lib/Navigation.dart" />
       <method v="2" />
     </configuration>
     <configuration name="Tab_Bar.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
@@ -92,11 +93,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Flutter.Navigation.dart" />
         <item itemvalue="Flutter.Module_10_Assignment.dart" />
         <item itemvalue="Flutter.main.dart (1)" />
         <item itemvalue="Flutter.Tab_Bar.dart" />
         <item itemvalue="Flutter.Grid_View.dart" />
-        <item itemvalue="Flutter.List_View.dart" />
       </list>
     </recent_temporary>
   </component>
@@ -143,6 +144,17 @@
     </task>
     <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="4 feb" />
