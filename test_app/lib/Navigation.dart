@@ -41,45 +41,53 @@ class HomeActivity extends StatelessWidget {
         title: Text("Home"),
         backgroundColor: Colors.blue,
       ),
-      body: Column(
+      body:
+      Container(
+        padding: EdgeInsets.all(10.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Padding(padding: const EdgeInsets.all(10.0)),
+            ElevatedButton(
+                onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>Activity1("This is from home to Activity1")));
+                },
+                style: buttonStyle,
+                child: Text("Go Activity 1")
+            ),
+            Padding(padding: const EdgeInsets.all(10.0)),
+            ElevatedButton(
+                onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>Activity2("This is from home to Activity2")));
+                },
+                style: buttonStyle,
+                child: Text("Go Activity 2")
+            )
+          ],
+        ),
+      )
 
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: [
-          Padding(padding: const EdgeInsets.all(10.0)),
-          ElevatedButton(
-              onPressed: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>Activity1()));
-              },
-              style: buttonStyle,
-              child: Text("Go Activity 1")
-          ),
-          Padding(padding: const EdgeInsets.all(10.0)),
-          ElevatedButton(
-              onPressed: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>Activity2()));
-              },
-              style: buttonStyle,
-              child: Text("Go Activity 2")
-          )
-        ],
-      ),
     );
   }
 }
 
 class Activity1 extends StatelessWidget {
-  const Activity1({super.key});
+  String msg;
 
+  Activity1(
+      this.msg,
+      {super.key}
+  );
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Activity1"),
+        title: Text(msg),
       ),
       body: Center(
         child: ElevatedButton(
             onPressed: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>Activity2()));
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>Activity2("This is from Activity1 to Activity2")));
             },
             child: Text("Goo Act 2")),
       ),
@@ -88,18 +96,23 @@ class Activity1 extends StatelessWidget {
 }
 
 class Activity2 extends StatelessWidget {
-  const Activity2({super.key});
+
+  String msg;
+  Activity2(
+      this.msg,
+      {super.key}
+  );
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Activity2"),
+        title: Text(msg),
       ),
       body: Center(
         child: ElevatedButton(
             onPressed: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>Activity1()));
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>Activity1("This is from Activity2 to Activity1")));
             },
             child: Text("Goo Act 1")),
       ),

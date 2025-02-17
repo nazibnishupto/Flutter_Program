@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b2e05f5-ab7b-4f2b-b472-c872dd2b209a" name="Changes" comment="ofc 11 feb">
-      <change afterPath="$PROJECT_DIR$/test_app/lib/Navigation.dart" afterDir="false" />
+    <list default="true" id="9b2e05f5-ab7b-4f2b-b472-c872dd2b209a" name="Changes" comment="ofc 12 feb">
+      <change afterPath="$PROJECT_DIR$/test_app/lib/Card.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_app/lib/Circuler_progress.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_app/lib/Navigation.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test_app/lib/Navigation.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +51,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Flutter.Card.dart.executor": "Run",
     "Flutter.Grid_View.dart.executor": "Run",
     "Flutter.List_View.dart.executor": "Run",
     "Flutter.Module_10_Assignment.dart.executor": "Run",
@@ -70,9 +73,9 @@
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
-  <component name="RunManager" selected="Flutter.Navigation.dart">
-    <configuration name="Grid_View.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/test_app/lib/Grid_View.dart" />
+  <component name="RunManager" selected="Flutter.Card.dart">
+    <configuration name="Card.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/test_app/lib/Card.dart" />
       <method v="2" />
     </configuration>
     <configuration name="Module_10_Assignment.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
@@ -93,11 +96,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Flutter.Card.dart" />
         <item itemvalue="Flutter.Navigation.dart" />
         <item itemvalue="Flutter.Module_10_Assignment.dart" />
         <item itemvalue="Flutter.main.dart (1)" />
         <item itemvalue="Flutter.Tab_Bar.dart" />
-        <item itemvalue="Flutter.Grid_View.dart" />
       </list>
     </recent_temporary>
   </component>
@@ -142,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738744269017</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ofc 12 feb">
+      <option name="closed" value="true" />
+      <created>1739355889433</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1739355889433</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,6 +171,7 @@
     <MESSAGE value="4 feb" />
     <MESSAGE value="5 feb" />
     <MESSAGE value="asgmnt" />
-    <option name="LAST_COMMIT_MESSAGE" value="asgmnt" />
+    <MESSAGE value="ofc 12 feb" />
+    <option name="LAST_COMMIT_MESSAGE" value="ofc 12 feb" />
   </component>
 </project>
