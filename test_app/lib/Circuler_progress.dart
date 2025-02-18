@@ -42,7 +42,11 @@ class HomeActivity extends StatelessWidget {
           backgroundColor: Colors.blue,
         ),
         body:Center(
-            child:
+            child: CircularProgressIndicator(
+              color: Colors.green,
+              strokeWidth: 5,
+              backgroundColor: Colors.greenAccent,
+            ),
         )
 
     );
