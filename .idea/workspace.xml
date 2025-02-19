@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b2e05f5-ab7b-4f2b-b472-c872dd2b209a" name="Changes" comment="live_test">
-      <change afterPath="$PROJECT_DIR$/Module_8/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_8/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Module_8/lib/main.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,11 +100,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Flutter.main.dart" />
         <item itemvalue="Flutter.Tab_Bar.dart" />
         <item itemvalue="Flutter.module_10_Live_test.dart" />
         <item itemvalue="Flutter.Module_10_Assignment.dart" />
         <item itemvalue="Flutter.main.dart (1)" />
+        <item itemvalue="Flutter.main.dart" />
       </list>
     </recent_temporary>
   </component>

@@ -58,7 +58,7 @@ class Home extends StatelessWidget {
                 child: Column(
                   children: [
                     TextFormField(
-                      decoration: InputDecoration(
+                        decoration: InputDecoration(
                         border: OutlineInputBorder(),
                         hintText: 'Email',
                         label: Text("Email"),
