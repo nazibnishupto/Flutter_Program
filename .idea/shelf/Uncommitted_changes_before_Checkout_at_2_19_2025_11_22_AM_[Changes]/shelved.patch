@@ -1,0 +1,80 @@
+Index: Module_8/lib/main.dart
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import 'package:flutter/material.dart';\r\n\r\nvoid main() {\r\n  runApp(myApp());\r\n}\r\n\r\nclass myApp extends StatelessWidget {\r\n  const myApp({super.key});\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return MaterialApp(\r\n      theme: ThemeData(\r\n          primaryColor: Colors.red,\r\n          appBarTheme: AppBarTheme(\r\n            color: Colors.red,\r\n            centerTitle: true,\r\n          ),\r\n          scaffoldBackgroundColor: Colors.grey,\r\n          elevatedButtonTheme: ElevatedButtonThemeData(\r\n              style: ElevatedButton.styleFrom(\r\n                  backgroundColor: Colors.deepPurpleAccent,\r\n                  foregroundColor: Colors.white))),\r\n      title: 'Ostad Flutter app',\r\n      home: Home(),\r\n    );\r\n  }\r\n}\r\n\r\nclass Home extends StatelessWidget {\r\n  const Home({super.key});\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    TextEditingController _numberController = TextEditingController();\r\n    TextEditingController _emailController = TextEditingController();\r\n    TextEditingController _passwordController = TextEditingController();\r\n    bool isSubmited = false;\r\n    final _formKey = GlobalKey<FormState>();\r\n    return Scaffold(\r\n      backgroundColor: Colors.white,\r\n      appBar: AppBar(\r\n        title: Column(\r\n          children: [\r\n            Text(\r\n              \"Ostad Flutter 2\",\r\n              style: TextStyle(fontSize: 25, color: Colors.white),\r\n            ),\r\n          ],\r\n        ),\r\n      ),\r\n      body: Column(\r\n        children: [\r\n          Form(\r\n              key: _formKey,\r\n              child: Padding(\r\n                padding: const EdgeInsets.all(8.0),\r\n                child: Column(\r\n                  children: [\r\n                    TextFormField(\r\n                      decoration: InputDecoration(\r\n                        border: OutlineInputBorder(),\r\n                        hintText: 'Email',\r\n                        label: Text(\"Email\"),\r\n                      ),\r\n                      validator: (value) {\r\n                        if (value == null || value.isEmpty) {\r\n                          return \"Empty email not allow\";\r\n                        }\r\n                        return null;\r\n                      },\r\n                    ),\r\n                    SizedBox(\r\n                      height: 20,\r\n                    ),\r\n                    TextFormField(\r\n                      obscureText: true,\r\n                      decoration: InputDecoration(\r\n                        border: OutlineInputBorder(),\r\n                        hintText: 'Password',\r\n                        label: Text(\"Password\"),\r\n                      ),\r\n                      validator: (value) {\r\n                        if (value == null ||\r\n                            value.isEmpty ||\r\n                            value.length < 6) {\r\n                          return \"Password must be at lest 6 ct long\";\r\n                        }\r\n                        return null;\r\n                      },\r\n                    ),\r\n                    SizedBox(\r\n                      height: 20,\r\n                    ),\r\n                    SizedBox(\r\n                        width: double.infinity,\r\n                        child: ElevatedButton(\r\n                            style: ElevatedButton.styleFrom(\r\n                                backgroundColor: Colors.green),\r\n                            onPressed: () {\r\n                              if (_formKey.currentState!.validate()) {\r\n                                isSubmited = true;\r\n                                Navigator.push(\r\n                                    context,\r\n                                    MaterialPageRoute(\r\n                                        builder: (context) => UserInfo()));\r\n\r\n                                // Navigator.pushReplacement(\r\n                                //     context,\r\n                                //     MaterialPageRoute(\r\n                                //         builder: (context) => UserInfo()));\r\n                              }\r\n                            },\r\n                            child: Text(\r\n                              'Submit',\r\n                              style: TextStyle(\r\n                                  fontSize: 20,\r\n                                  color: Colors.white,\r\n                                  fontWeight: FontWeight.bold),\r\n                            ))),\r\n                    SizedBox(\r\n                      height: 300,\r\n                      child: GridView.builder(\r\n                          gridDelegate:\r\n                          SliverGridDelegateWithFixedCrossAxisCount(\r\n                              crossAxisCount: 4,\r\n                              crossAxisSpacing: 10,\r\n                              mainAxisSpacing: 10),\r\n                          itemCount: 7,\r\n                          itemBuilder: (context, index) {\r\n                            return Container(\r\n\r\n                              decoration: BoxDecoration(\r\n                                  color: Colors.red,\r\n                                  borderRadius: BorderRadius.circular(25)\r\n                              ),\r\n                              child: Center(\r\n                                  child: Icon(Icons.mobile_friendly,size: 40,color: Colors.white,)),\r\n                            );\r\n                          }),\r\n                    )\r\n                  ],\r\n                ),\r\n              ))\r\n        ],\r\n      ),\r\n      floatingActionButton: FloatingActionButton.extended(\r\n        onPressed: () {\r\n          print(\"Floating action button pressed\");\r\n        },\r\n        label: Text(\"Add new\"),\r\n      ),\r\n    );\r\n  }\r\n}\r\n\r\nclass UserInfo extends StatelessWidget {\r\n  const UserInfo({super.key});\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return Scaffold(\r\n      appBar: AppBar(\r\n        title: Text(\"User page\"),\r\n      ),\r\n      body: Column(\r\n        children: [\r\n          ElevatedButton(\r\n              onPressed: () {\r\n                Navigator.pop(context);\r\n              },\r\n              child: Text(\"Back\")),\r\n          ElevatedButton(\r\n              onPressed: () {\r\n                Navigator.push(\r\n                    context, MaterialPageRoute(builder: (context) => Page1()));\r\n              },\r\n              child: Text(\"Page1\"))\r\n        ],\r\n      ),\r\n    );\r\n  }\r\n}\r\n\r\nclass Page1 extends StatelessWidget {\r\n  const Page1({super.key});\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return Scaffold(\r\n      appBar: AppBar(\r\n        title: Text(\"Page 1 page\"),\r\n      ),\r\n      body: Column(\r\n        children: [\r\n          ElevatedButton(\r\n              onPressed: () {\r\n                Navigator.pushReplacement(\r\n                    context, MaterialPageRoute(builder: (context) => Home()));\r\n                // Navigator.pop(context);\r\n              },\r\n              child: Text(\"Back to Home\")),\r\n        ],\r\n      ),\r\n    );\r\n  }\r\n}
+===================================================================
+diff --git a/Module_8/lib/main.dart b/Module_8/lib/main.dart
+--- a/Module_8/lib/main.dart	(revision 1a0e5b17643fe312b052e61baf8bf501e6554135)
++++ b/Module_8/lib/main.dart	(date 1739942567683)
+@@ -1,3 +1,8 @@
++// Navigation
++// Data Pass in Navigation
++// ThemeData
++
++
+ import 'package:flutter/material.dart';
+ 
+ void main() {
+@@ -58,6 +63,7 @@
+                 child: Column(
+                   children: [
+                     TextFormField(
++                      controller: _emailController,
+                       decoration: InputDecoration(
+                         border: OutlineInputBorder(),
+                         hintText: 'Email',
+@@ -103,7 +109,7 @@
+                                 Navigator.push(
+                                     context,
+                                     MaterialPageRoute(
+-                                        builder: (context) => UserInfo()));
++                                        builder: (context) => UserInfo(_emailController.text)));
+ 
+                                 // Navigator.pushReplacement(
+                                 //     context,
+@@ -117,7 +123,12 @@
+                                   fontSize: 20,
+                                   color: Colors.white,
+                                   fontWeight: FontWeight.bold),
+-                            ))),
++                            )
++                        )
++                    ),
++                    SizedBox(
++                      height: 20,
++                    ),
+                     SizedBox(
+                       height: 300,
+                       child: GridView.builder(
+@@ -155,21 +166,30 @@
+ }
+ 
+ class UserInfo extends StatelessWidget {
+-  const UserInfo({super.key});
++  final String s;
++  UserInfo(this.s, {super.key});
+ 
+   @override
+   Widget build(BuildContext context) {
+     return Scaffold(
++      backgroundColor: Colors.white,
+       appBar: AppBar(
+         title: Text("User page"),
+       ),
+       body: Column(
+         children: [
++          SizedBox(
++            height: 20,
++          ),
++          Text(s),
+           ElevatedButton(
+               onPressed: () {
+                 Navigator.pop(context);
+               },
+               child: Text("Back")),
++          SizedBox(
++            height: 20,
++          ),
+           ElevatedButton(
+               onPressed: () {
+                 Navigator.push(

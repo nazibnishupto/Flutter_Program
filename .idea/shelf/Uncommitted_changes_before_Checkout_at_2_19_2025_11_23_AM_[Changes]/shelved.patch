@@ -1,0 +1,120 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"NONE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"9b2e05f5-ab7b-4f2b-b472-c872dd2b209a\" name=\"Changes\" comment=\"live_test\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/caches/deviceStreaming.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/test_app/lib/Circuler_progress.dart\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/test_app/lib/Circuler_progress.dart\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ClangdSettings\">\r\n    <option name=\"formatViaClangd\" value=\"false\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Dart File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;nazibnishupto&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/nazibnishupto/Flutter_Program.git&quot;,\r\n    &quot;accountId&quot;: &quot;71d60e62-8be1-495f-8d1a-74c5c5b63fd1&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 5\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2reMbESeYnxNq8cfERnPIU1uC1O\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Flutter.Circuler_progress.dart.executor\": \"Run\",\r\n    \"Flutter.Grid_View.dart.executor\": \"Run\",\r\n    \"Flutter.List_View.dart.executor\": \"Run\",\r\n    \"Flutter.Module_10_Assignment.dart.executor\": \"Run\",\r\n    \"Flutter.Tab_Bar.dart.executor\": \"Run\",\r\n    \"Flutter.main.dart (1).executor\": \"Run\",\r\n    \"Flutter.main.dart.executor\": \"Run\",\r\n    \"Flutter.module_10_Live_test.dart.executor\": \"Run\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.cidr.known.project.marker\": \"true\",\r\n    \"RunOnceActivity.readMode.enableVisualFormatting\": \"true\",\r\n    \"cf.first.check.clang-format\": \"false\",\r\n    \"cidr.known.project.marker\": \"true\",\r\n    \"com.google.services.firebase.aqiPopupShown\": \"true\",\r\n    \"dart.analysis.tool.window.visible\": \"false\",\r\n    \"git-widget-placeholder\": \"main\",\r\n    \"ignore.virus.scanning.warn.message\": \"true\",\r\n    \"io.flutter.reload.alreadyRun\": \"true\",\r\n    \"kotlin-language-version-configured\": \"true\",\r\n    \"settings.editor.selected.configurable\": \"dart.settings\",\r\n    \"show.migrate.to.gradle.popup\": \"false\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RunManager\" selected=\"Flutter.Circuler_progress.dart\">\r\n    <configuration name=\"Circuler_progress.dart\" type=\"FlutterRunConfigurationType\" factoryName=\"Flutter\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"filePath\" value=\"$PROJECT_DIR$/test_app/lib/Circuler_progress.dart\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Module_10_Assignment.dart\" type=\"FlutterRunConfigurationType\" factoryName=\"Flutter\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"filePath\" value=\"$PROJECT_DIR$/Assignment/lib/Module_10_Assignment.dart\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Tab_Bar.dart\" type=\"FlutterRunConfigurationType\" factoryName=\"Flutter\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"filePath\" value=\"$PROJECT_DIR$/test_app/lib/Tab_Bar.dart\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main.dart (1)\" type=\"FlutterRunConfigurationType\" factoryName=\"Flutter\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"filePath\" value=\"$PROJECT_DIR$/Assignment/lib/main.dart\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"module_10_Live_test.dart\" type=\"FlutterRunConfigurationType\" factoryName=\"Flutter\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"filePath\" value=\"$PROJECT_DIR$/Assignment/lib/module_10_Live_test.dart\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Flutter.Circuler_progress.dart\" />\r\n        <item itemvalue=\"Flutter.module_10_Live_test.dart\" />\r\n        <item itemvalue=\"Flutter.Module_10_Assignment.dart\" />\r\n        <item itemvalue=\"Flutter.main.dart (1)\" />\r\n        <item itemvalue=\"Flutter.Tab_Bar.dart\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"9b2e05f5-ab7b-4f2b-b472-c872dd2b209a\" name=\"Changes\" comment=\"\" />\r\n      <created>1736915162548</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1736915162548</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"4 feb\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1738679209642</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1738679209642</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"5 feb\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1738731785396</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1738731785396</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"5 feb\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1738744173201</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1738744173201</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"asgmnt\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1738744269017</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1738744269017</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"home\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1738768085492</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1738768085492</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"home\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1738768157069</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1738768157069</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"home\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1738775933269</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1738775933269</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"home\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1738776060147</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1738776060147</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"live_test\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1738776105700</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1738776105700</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"10\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"4 feb\" />\r\n    <MESSAGE value=\"5 feb\" />\r\n    <MESSAGE value=\"asgmnt\" />\r\n    <MESSAGE value=\"home\" />\r\n    <MESSAGE value=\"home live\" />\r\n    <MESSAGE value=\"live_test\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"live_test\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 6ad4ba8cbec1fc02d47708eaeb0e45808bfb768e)
++++ b/.idea/workspace.xml	(date 1739942580422)
+@@ -5,9 +5,8 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="9b2e05f5-ab7b-4f2b-b472-c872dd2b209a" name="Changes" comment="live_test">
+-      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" />
++      <change afterPath="$PROJECT_DIR$/Module_8/lib/main.dart" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/test_app/lib/Circuler_progress.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test_app/lib/Circuler_progress.dart" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -25,6 +24,11 @@
+     </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="Module_8" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="GitHubPullRequestSearchHistory">{
+@@ -48,36 +52,32 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "Flutter.Circuler_progress.dart.executor": "Run",
+-    "Flutter.Grid_View.dart.executor": "Run",
+-    "Flutter.List_View.dart.executor": "Run",
+-    "Flutter.Module_10_Assignment.dart.executor": "Run",
+-    "Flutter.Tab_Bar.dart.executor": "Run",
+-    "Flutter.main.dart (1).executor": "Run",
+-    "Flutter.main.dart.executor": "Run",
+-    "Flutter.module_10_Live_test.dart.executor": "Run",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "RunOnceActivity.cidr.known.project.marker": "true",
+-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+-    "cf.first.check.clang-format": "false",
+-    "cidr.known.project.marker": "true",
+-    "com.google.services.firebase.aqiPopupShown": "true",
+-    "dart.analysis.tool.window.visible": "false",
+-    "git-widget-placeholder": "main",
+-    "ignore.virus.scanning.warn.message": "true",
+-    "io.flutter.reload.alreadyRun": "true",
+-    "kotlin-language-version-configured": "true",
+-    "settings.editor.selected.configurable": "dart.settings",
+-    "show.migrate.to.gradle.popup": "false"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;Flutter.Circuler_progress.dart.executor&quot;: &quot;Run&quot;,
++    &quot;Flutter.Grid_View.dart.executor&quot;: &quot;Run&quot;,
++    &quot;Flutter.List_View.dart.executor&quot;: &quot;Run&quot;,
++    &quot;Flutter.Module_10_Assignment.dart.executor&quot;: &quot;Run&quot;,
++    &quot;Flutter.Tab_Bar.dart.executor&quot;: &quot;Run&quot;,
++    &quot;Flutter.main.dart (1).executor&quot;: &quot;Run&quot;,
++    &quot;Flutter.main.dart.executor&quot;: &quot;Run&quot;,
++    &quot;Flutter.module_10_Live_test.dart.executor&quot;: &quot;Run&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
++    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
++    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
++    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
++    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
++    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
++    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
++    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;dart.settings&quot;,
++    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+   }
+-}]]></component>
+-  <component name="RunManager" selected="Flutter.Circuler_progress.dart">
+-    <configuration name="Circuler_progress.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
+-      <option name="filePath" value="$PROJECT_DIR$/test_app/lib/Circuler_progress.dart" />
+-      <method v="2" />
+-    </configuration>
++}</component>
++  <component name="RunManager" selected="Flutter.main.dart">
+     <configuration name="Module_10_Assignment.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
+       <option name="filePath" value="$PROJECT_DIR$/Assignment/lib/Module_10_Assignment.dart" />
+       <method v="2" />
+@@ -88,6 +88,10 @@
+     </configuration>
+     <configuration name="main.dart (1)" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
+       <option name="filePath" value="$PROJECT_DIR$/Assignment/lib/main.dart" />
++      <method v="2" />
++    </configuration>
++    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
++      <option name="filePath" value="$PROJECT_DIR$/Module_8/lib/main.dart" />
+       <method v="2" />
+     </configuration>
+     <configuration name="module_10_Live_test.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
+@@ -96,11 +100,11 @@
+     </configuration>
+     <recent_temporary>
+       <list>
+-        <item itemvalue="Flutter.Circuler_progress.dart" />
++        <item itemvalue="Flutter.main.dart" />
++        <item itemvalue="Flutter.Tab_Bar.dart" />
+         <item itemvalue="Flutter.module_10_Live_test.dart" />
+         <item itemvalue="Flutter.Module_10_Assignment.dart" />
+         <item itemvalue="Flutter.main.dart (1)" />
+-        <item itemvalue="Flutter.Tab_Bar.dart" />
+       </list>
+     </recent_temporary>
+   </component>

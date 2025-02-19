@@ -58,6 +58,7 @@ class Home extends StatelessWidget {
                 child: Column(
                   children: [
                     TextFormField(
+                        controller: _emailController,
                         decoration: InputDecoration(
                         border: OutlineInputBorder(),
                         hintText: 'Email',
@@ -103,7 +104,7 @@ class Home extends StatelessWidget {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => UserInfo()));
+                                        builder: (context) => UserInfo(_emailController.text)));
 
                                 // Navigator.pushReplacement(
                                 //     context,
@@ -155,7 +156,8 @@ class Home extends StatelessWidget {
 }
 
 class UserInfo extends StatelessWidget {
-  const UserInfo({super.key});
+  final String email;
+  const UserInfo(this.email, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -165,6 +167,7 @@ class UserInfo extends StatelessWidget {
       ),
       body: Column(
         children: [
+          Text(email),
           ElevatedButton(
               onPressed: () {
                 Navigator.pop(context);
