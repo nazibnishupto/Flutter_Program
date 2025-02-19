@@ -167,7 +167,7 @@ class UserInfo extends StatelessWidget {
       ),
       body: Column(
         children: [
-          Text(email),
+          Text(email, style: TextStyle(fontStyle: FontStyle.italic, fontSize: 32),),
           ElevatedButton(
               onPressed: () {
                 Navigator.pop(context);
