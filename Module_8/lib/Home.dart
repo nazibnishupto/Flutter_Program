@@ -11,44 +11,76 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  int _count = 0;
-  _counterIncrement(){
+  TextEditingController _taskController = TextEditingController();
+
+  List<String> _task = [];
+
+  @override
+  void initState() {
+    super.initState();
+
+  }
+
+  _addTask(){
+    if(_taskController.text.isNotEmpty){
+      setState(() {
+        _task.add(_taskController.text);
+        _taskController.clear();
+      });
+    }
+  }
+
+  _removeTask(int index){
     setState(() {
-      _count++;
+      _task.removeAt(index);
     });
   }
 
-  _counterDecrement(){
+  _removeALL(){
     setState(() {
-      _count--;
+      _task.clear();
     });
   }
+
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Counter", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+        title: Text("TO DO LIST", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white)),
         centerTitle: false,
       ),
-      body: Center(
-        child: Text(_count.toString(), style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold)),
-      ),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          children: [
+            TextField(
+              controller: _taskController,
+              decoration: InputDecoration(
+                hintText: "Enter your test",
+                border: OutlineInputBorder(),
+                suffixIcon: IconButton(onPressed: _addTask, icon: Icon(Icons.add)),
+              ),
+            ),
+            SizedBox(height: 20,),
 
-      floatingActionButton: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          FloatingActionButton(
-            onPressed: _counterIncrement,
-            child: Icon(CupertinoIcons.plus),
-          ),
-          SizedBox(height: 10), // Space between buttons
-          FloatingActionButton(
-            onPressed: _counterDecrement,
-            child: Icon(CupertinoIcons.minus),
-          ),
-        ],
+            Expanded(
+              child: ListView.builder(
+                  itemCount: _task.length,
+                  itemBuilder:(context,index){
+                    return Card(
+                      child: ListTile(
+                        title: Text(_task[index]),
+                        trailing: IconButton(onPressed: () => _removeTask(index), icon: Icon(Icons.delete), color: Colors.red,),
+                      ),
+                    );
+                  }
+              ),
+            )
+          ],
+        ),
       ),
+      floatingActionButton: FloatingActionButton(onPressed: _removeALL, child: Icon(Icons.delete_sweep),),
     );
   }
 }
