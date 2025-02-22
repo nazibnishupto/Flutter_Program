@@ -16,8 +16,12 @@ class _HomeState extends State<Home> {
     setState(() {
       _count++;
     });
+  }
 
-    print(_count);
+  _counterDecrement(){
+    setState(() {
+      _count--;
+    });
   }
 
   @override
@@ -30,7 +34,21 @@ class _HomeState extends State<Home> {
       body: Center(
         child: Text(_count.toString(), style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold)),
       ),
-      floatingActionButton: FloatingActionButton(onPressed: _counterIncrement, child: Icon(CupertinoIcons.plus),),
+
+      floatingActionButton: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          FloatingActionButton(
+            onPressed: _counterIncrement,
+            child: Icon(CupertinoIcons.plus),
+          ),
+          SizedBox(height: 10), // Space between buttons
+          FloatingActionButton(
+            onPressed: _counterDecrement,
+            child: Icon(CupertinoIcons.minus),
+          ),
+        ],
+      ),
     );
   }
 }
