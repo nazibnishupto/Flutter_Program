@@ -1,10 +1,11 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import 'UserInfo.dart';
 
-class Home extends StatelessWidget {
-  Home({super.key});
+class MediaQueryExample extends StatelessWidget {
+  MediaQueryExample({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -36,6 +37,37 @@ class Home extends StatelessWidget {
             ),
           ),
         ),
+      ),
+    );
+  }
+}
+
+class WrapExample extends StatelessWidget {
+  WrapExample({super.key});
+
+  List<String> categories = ["Veg","Mutton","chicken","carrot","milk","tea","masala","potato"];
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Wrap Example"),
+      ),
+
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Wrap(
+            spacing: 10,
+            runSpacing: 10,
+            children: categories.map((category){
+              return Chip(
+                label: Text(category,style: const TextStyle(color: Colors.white)),
+                backgroundColor: Colors.blueAccent.shade100,
+                elevation: 4,
+                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+              );
+            }).toList()
+          )
       ),
     );
   }
