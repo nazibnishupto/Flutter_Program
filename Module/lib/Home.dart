@@ -72,3 +72,38 @@ class WrapExample extends StatelessWidget {
     );
   }
 }
+
+class LayoutBuilderExample extends StatelessWidget {
+  const LayoutBuilderExample({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Layout Builder"),
+        backgroundColor: Colors.redAccent.shade200,
+        centerTitle: true,
+      ),
+
+      body: LayoutBuilder(
+          builder: (context,con){
+            if(con.maxWidth >= 900){
+              return Center(
+                child: Text("This is for PC View", style: TextStyle(fontSize: 20,fontStyle: FontStyle.italic, fontWeight: FontWeight.bold,color: Colors.red),),
+              );
+            }
+            else if(con.maxWidth>600 && con.maxWidth<900){
+              return Center(
+                child: Text("This is for Tablet View", style: TextStyle(fontSize: 20,fontStyle: FontStyle.italic, fontWeight: FontWeight.bold,color: Colors.green),),
+              );
+            }
+            else{
+              return Center(
+                child: Text("This is for Mobile View", style: TextStyle(fontSize: 20,fontStyle: FontStyle.italic, fontWeight: FontWeight.bold,color: Colors.blue),),
+              );
+            }
+          }
+      ),
+    );
+  }
+}
