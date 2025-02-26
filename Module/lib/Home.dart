@@ -139,7 +139,29 @@ class StackExample extends StatelessWidget {
       body: Center(
         child: Stack(
           children: [
-            Container()
+            Container(
+              height: 300,
+              width: 300,
+              child: ColoredBox(color:Colors.black),
+            ),
+            Positioned(
+              top: 10,
+              left: 10,
+              child: Container(
+                height: 100,
+                width: 100,
+                child: ColoredBox(color:Colors.blue),
+              ),
+            ),
+            Positioned(
+              bottom: 10,
+              right: 10,
+              child: Container(
+                height: 100,
+                width: 100,
+                child: ColoredBox(color:Colors.amber),
+              ),
+            )
           ],
         ),
       ),

@@ -20,6 +20,7 @@ class myApp extends StatelessWidget {
                   backgroundColor: Colors.deepPurpleAccent,
                   foregroundColor: Colors.white))),
       title: 'Ostad Flutter app',
+
       home: StackExample(),
     );
   }
