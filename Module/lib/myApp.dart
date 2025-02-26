@@ -21,7 +21,7 @@ class myApp extends StatelessWidget {
                   foregroundColor: Colors.white))),
       title: 'Ostad Flutter app',
 
-      home: StackExample(),
+      home: ImageExample(),
     );
   }
 }
