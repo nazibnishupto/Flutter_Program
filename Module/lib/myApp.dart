@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sizer/sizer.dart';
 
 import 'Home.dart';
 
@@ -7,21 +8,25 @@ class myApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-          primaryColor: Colors.red,
-          appBarTheme: AppBarTheme(
-            color: Colors.blueGrey,
-            centerTitle: true,
-          ),
-          scaffoldBackgroundColor: Colors.white,
-          elevatedButtonTheme: ElevatedButtonThemeData(
-              style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.deepPurpleAccent,
-                  foregroundColor: Colors.white))),
-      title: 'Ostad Flutter app',
+    return Sizer(
+      builder: (context, orientation, screenType) {
+        return MaterialApp(
+          theme: ThemeData(
+              primaryColor: Colors.red,
+              appBarTheme: AppBarTheme(
+                color: Colors.blueGrey,
+                centerTitle: true,
+              ),
+              scaffoldBackgroundColor: Colors.white,
+              elevatedButtonTheme: ElevatedButtonThemeData(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.deepPurpleAccent,
+                      foregroundColor: Colors.white))),
+          title: 'Ostad Flutter app',
 
-      home: ImageExample(),
+          home: ImageExample(),
+        );
+      }
     );
   }
 }
