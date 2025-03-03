@@ -4,51 +4,115 @@ import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
-import 'UserInfo.dart';
+class SnackbarExample extends StatefulWidget {
+  const SnackbarExample({super.key});
 
-class ImageExample extends StatelessWidget {
-  const ImageExample({super.key});
+  @override
+  State<SnackbarExample> createState() => _SnackbarExampleState();
+}
 
+class _SnackbarExampleState extends State<SnackbarExample> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Image"),
+        title: Text("Snackbar"),
       ),
       body: Column(
         children: [
-          Center(
-            child: Image.network(
-              "https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-              height: 50.h,
-              width: 50.w,
-            ),
+          SizedBox(
+            height: 50,
+            width: 50,
           ),
-          const SizedBox(height: 20), // Added spacing
           Center(
-            child: Image.asset(
-              "ASSET/uncrop_hero_bdf08a8ca6.jpg",
-              width: 200,
-              height: 200,
-              fit: BoxFit.fitWidth,
-            ),
+            child: ElevatedButton(
+                onPressed: () {
+                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                    content: Text("HI HA HU --- Gone"),
+                    duration: Duration(seconds: 1),
+                    action: SnackBarAction(label: 'Undo', onPressed: () {}),
+                  ));
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.green,
+                ),
+                child: Text("Snackbar Button")),
           ),
-          Text("Hello", style: TextStyle(fontSize: 30.sp)),
-          Expanded(
-            child: ResponsiveBuilder(
-              builder: (context, sizingInformation) {
-                if (sizingInformation.deviceScreenType == DeviceScreenType.desktop) {
-                  return Container(color: Colors.blue, height: 100);
-                }
-                if (sizingInformation.deviceScreenType == DeviceScreenType.tablet) {
-                  return Container(color: Colors.red, height: 100);
-                }
-                if (sizingInformation.deviceScreenType == DeviceScreenType.watch) {
-                  return Container(color: Colors.yellow, height: 100);
-                }
-                return Container(color: Colors.purple, height: 100);
+          SizedBox(
+            height: 50,
+            width: 50,
+          ),
+          Center(
+            child: ElevatedButton(
+              onPressed: () {
+                showModalBottomSheet(
+                    context: context,
+                    backgroundColor: Colors.blueGrey,
+                    builder: (context) {
+                      return Column(
+                        children: [
+                          SizedBox(
+                            height: 50,
+                            width: 50,
+                          ),
+                          Center(
+                            child: Text("This is Bottom Sheet"),
+                          ),
+                          SizedBox(
+                            height: 50,
+                            width: 50,
+                          ),
+                          Container(
+                            height: 50,
+                            width: 50,
+                            color: Colors.red,
+                          ),
+                          SizedBox(
+                            height: 50,
+                            width: 50,
+                          ),
+                          Center(
+                            child: Text("This is Bottom Sheet"),
+                          ),
+                        ],
+                      );
+                    });
               },
+              child: Text("BottomList Button"),
             ),
+          ),
+          SizedBox(
+            height: 50,
+            width: 50,
+          ),
+          Center(
+            child: ElevatedButton(
+                onPressed: () {
+                  showDialog(
+                      context: context,
+                      builder: (context) {
+                        return AlertDialog(
+                          title: Text("Delete"),
+                          content: Text("Are u sure u want to delete?"),
+                          actions: [
+                            TextButton(
+                                onPressed: () {
+                                  Navigator.pop(context);
+                                },
+                                child: Text("Okay")),
+                            TextButton(
+                                onPressed: () {
+                                  Navigator.pop(context);
+                                },
+                                child: Text("Cancel"))
+                          ],
+                        );
+                      });
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.red,
+                ),
+                child: Text("Alert Button")),
           ),
         ],
       ),
