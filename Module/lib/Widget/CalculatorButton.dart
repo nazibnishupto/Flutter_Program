@@ -7,6 +7,7 @@ class CalculatorButton extends StatelessWidget {
   final VoidCallback onClick;
 
   CalculatorButton({
+
     super.key,
     required this.text,
     this.color,
