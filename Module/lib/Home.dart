@@ -1,8 +1,12 @@
+import 'dart:ui';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+
+import 'Widget/cityWidget.dart';
 
 class SnackbarExample extends StatefulWidget {
   const SnackbarExample({super.key});
@@ -119,68 +123,24 @@ class _SnackbarExampleState extends State<SnackbarExample> {
             height: 50,
             width: 50,
           ),
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              children: [
-                SizedBox(width: 10,),
-                Container(
-                  height: 50.h,
-                  width: 30.w,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Image.network("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/6d/6b/80/caption.jpg?w=1200&h=-1&s=1"),
-                      Text("Singapore",style: TextStyle(fontSize: 30,color: Colors.red, fontStyle: FontStyle.italic),),
-                      SizedBox(height: 5,),
-                      Text("Singapore is one of the beautiful cities in the world")
-                    ],
-                  ),
-                ),
-                SizedBox(width: 10,),
-                Container(
-                  height: 50.h,
-                  width: 30.w,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Image.network("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/6d/6b/80/caption.jpg?w=1200&h=-1&s=1"),
-                      Text("Singapore",style: TextStyle(fontSize: 30,color: Colors.red, fontStyle: FontStyle.italic),),
-                      SizedBox(height: 5,),
-                      Text("Singapore is one of the beautiful cities in the world")
-                    ],
-                  ),
-                ),
-                SizedBox(width: 10,),
-                Container(
-                  height: 50.h,
-                  width: 30.w,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Image.network("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/6d/6b/80/caption.jpg?w=1200&h=-1&s=1"),
-                      Text("Singapore",style: TextStyle(fontSize: 30,color: Colors.red, fontStyle: FontStyle.italic),),
-                      SizedBox(height: 5,),
-                      Text("Singapore is one of the beautiful cities in the world")
-                    ],
-                  ),
-                )
-              ],
+          ScrollConfiguration(
+            behavior: ScrollConfiguration.of(context).copyWith(dragDevices: {
+              PointerDeviceKind.mouse,
+              PointerDeviceKind.touch,
+            }),
+            child: SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              physics: AlwaysScrollableScrollPhysics(),
+              child: Row(
+                children: [
+                  SizedBox(width: 10,),
+                  cityWidget(cityImage: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/6d/6b/80/caption.jpg?w=1200&h=-1&s=1', cityName: 'Singapore', cityDescription: 'This is one of the growing city in world right now',),
+                  SizedBox(width: 10,),
+                  cityWidget(cityImage: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/6d/6b/80/caption.jpg?w=1200&h=-1&s=1', cityName: 'Nepal', cityDescription: 'This is one of the cleanliest cities in world right now',),
+                  SizedBox(width: 10,),
+                  cityWidget(cityImage: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/6d/6b/80/caption.jpg?w=1200&h=-1&s=1', cityName: 'Dhaka', cityDescription: 'This is one of the poluted city in world right now',),
+                ],
+              ),
             ),
           ),
         ],
@@ -188,3 +148,5 @@ class _SnackbarExampleState extends State<SnackbarExample> {
     );
   }
 }
+
+
