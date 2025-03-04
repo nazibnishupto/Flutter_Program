@@ -11,7 +11,7 @@ class cityWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 40.h,
+      height: 50.h,
       width: 50.w,
       decoration: BoxDecoration(
         color: Colors.white,
