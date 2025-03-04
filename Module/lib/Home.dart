@@ -8,14 +8,14 @@ import 'package:responsive_builder/responsive_builder.dart';
 
 import 'Widget/cityWidget.dart';
 
-class SnackbarExample extends StatefulWidget {
-  const SnackbarExample({super.key});
+class Module_11_Class_1 extends StatefulWidget {
+  const Module_11_Class_1({super.key});
 
   @override
-  State<SnackbarExample> createState() => _SnackbarExampleState();
+  State<Module_11_Class_1> createState() => _Module_11_Class_1State();
 }
 
-class _SnackbarExampleState extends State<SnackbarExample> {
+class _Module_11_Class_1State extends State<Module_11_Class_1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
