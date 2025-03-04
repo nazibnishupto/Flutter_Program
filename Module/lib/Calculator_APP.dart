@@ -53,7 +53,6 @@ class _calculatorAPPState extends State<calculatorAPP> {
         num1= double.parse(_input);
         operand = value;
         _input = '';
-
       }
       else{
         _input += value;
