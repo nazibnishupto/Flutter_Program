@@ -4,8 +4,11 @@ import 'package:flutter/material.dart';
 import 'myApp.dart';
 
 void main() {
-  runApp(
+/*  runApp(
     const myApp(),
-  );
+  );*/
+  runApp(DevicePreview(
+    builder: (context) => myApp(), // Wrap your app
+  ),);
 }
 

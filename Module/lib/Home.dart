@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:ui';
 
 import 'package:flutter/cupertino.dart';
@@ -5,148 +6,108 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+import 'package:http/http.dart' as http;
 
-import 'Widget/cityWidget.dart';
-
-class Module_11_Class_1 extends StatefulWidget {
-  const Module_11_Class_1({super.key});
+class RestApiExample extends StatefulWidget {
+  const RestApiExample({super.key});
 
   @override
-  State<Module_11_Class_1> createState() => _Module_11_Class_1State();
+  State<RestApiExample> createState() => _RestApiExampleState();
 }
 
-class _Module_11_Class_1State extends State<Module_11_Class_1> {
+class _RestApiExampleState extends State<RestApiExample> {
+  List users = [];
+
+  bool isLoading = false;
+
+  Future<void> fetchUser() async {
+    setState(() {
+      isLoading = true;
+    });
+    final response =
+        await http.get(Uri.parse('https://jsonplaceholder.typicode.com/users'));
+
+    setState(() {
+      isLoading = false;
+    });
+
+    if (response.statusCode == 200) {
+      users = jsonDecode(response.body);
+    } else {
+      throw Exception("Failed to load users");
+    }
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    fetchUser();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey.shade300,
       appBar: AppBar(
-        title: Text("Snackbar"),
+        title: Text(
+          "User List",
+          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+        ),
+        backgroundColor: Colors.brown,
       ),
-      body: Column(
-        children: [
-          SizedBox(
-            height: 10,
-            width: 10,
-          ),
-          Center(
-            child: ElevatedButton(
-                onPressed: () {
-                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                    content: Text("HI HA HU --- Gone"),
-                    duration: Duration(seconds: 1),
-                    action: SnackBarAction(label: 'Undo', onPressed: () {}),
-                  ));
-                },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.green,
-                ),
-                child: Text("Snackbar Button")),
-          ),
-          SizedBox(
-            height: 15,
-            width: 15,
-          ),
-          Center(
-            child: ElevatedButton(
-              onPressed: () {
-                showModalBottomSheet(
-                    context: context,
-                    backgroundColor: Colors.blueGrey,
-                    builder: (context) {
-                      return Column(
-                        children: [
-                          SizedBox(
-                            height: 50,
-                            width: 50,
-                          ),
-                          Center(
-                            child: Text("This is Bottom Sheet"),
-                          ),
-                          SizedBox(
-                            height: 50,
-                            width: 50,
-                          ),
-                          Container(
-                            height: 50,
-                            width: 50,
-                            color: Colors.red,
-                          ),
-                          SizedBox(
-                            height: 50,
-                            width: 50,
-                          ),
-                          Center(
-                            child: Text("This is Bottom Sheet"),
-                          ),
-                        ],
-                      );
-                    });
-              },
-              child: Text("BottomList Button"),
-            ),
-          ),
-          SizedBox(
-            height: 15,
-            width: 15,
-          ),
-          Center(
-            child: ElevatedButton(
-                onPressed: () {
-                  showDialog(
-                      context: context,
-                      builder: (context) {
-                        return AlertDialog(
-                          title: Text("Delete"),
-                          content: Text("Are u sure u want to delete?"),
-                          actions: [
-                            TextButton(
-                                onPressed: () {
-                                  Navigator.pop(context);
-                                },
-                                child: Text("Okay")),
-                            TextButton(
-                                onPressed: () {
-                                  Navigator.pop(context);
-                                },
-                                child: Text("Cancel"))
-                          ],
-                        );
-                      });
-                },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.red,
-                ),
-                child: Text("Alert Button")),
-          ),
-          SizedBox(
-            height: 50,
-            width: 50,
-          ),
-          ScrollConfiguration(
-            behavior: ScrollConfiguration.of(context).copyWith(dragDevices: {
-              PointerDeviceKind.mouse,
-              PointerDeviceKind.touch,
-            }),
-            child: SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              physics: AlwaysScrollableScrollPhysics(),
-              child: Row(
-                children: [
-                  SizedBox(width: 10,),
-                  cityWidget(cityImage: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/6d/6b/80/caption.jpg?w=1200&h=-1&s=1', cityName: 'Singapore', cityDescription: 'This is one of the growing city in world right now',),
-                  SizedBox(width: 10,),
-                  cityWidget(cityImage: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/6d/6b/80/caption.jpg?w=1200&h=-1&s=1', cityName: 'Nepal', cityDescription: 'This is one of the cleanliest cities in world right now',),
-                  SizedBox(width: 10,),
-                  cityWidget(cityImage: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/6d/6b/80/caption.jpg?w=1200&h=-1&s=1', cityName: 'Dhaka', cityDescription: 'This is one of the poluted city in world right now',),
-                ],
-              ),
-            ),
-          ),
-        ],
-      ),
+      body: isLoading
+          ? Center(
+              child: CircularProgressIndicator(),
+            )
+          : ListView.builder(
+              itemCount: users.length,
+              itemBuilder: (context, index) {
+                final user = users[index];
+                return Card(
+                  margin: EdgeInsets.all(5),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12)),
+                  elevation: 4,
+                  child: ListTile(
+                    leading: CircleAvatar(
+                      backgroundColor: Colors.deepPurple,
+                      child: Text(
+                        user['name'][0],
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, color: Colors.white),
+                      ),
+                    ),
+                    title: Text(
+                      user['name'],
+                      style:
+                          TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+                    ),
+                    subtitle: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        SizedBox(
+                          height: 4,
+                        ),
+                        Text(
+                          "UserName: ${user['username']}",
+                          style: TextStyle(color: Colors.grey),
+                        ),
+                        Text(
+                          "Email: ${user['email']}",
+                          style: TextStyle(color: Colors.grey),
+                        ),
+                        Text(
+                          "Phone: ${user['phone']}",
+                          style: TextStyle(color: Colors.grey),
+                        ),
+                        Text(
+                          "Website ${user['website']}",
+                          style: TextStyle(color: Colors.grey),
+                        ),
+                      ],
+                    ),
+                  ),
+                );
+              }),
     );
   }
 }
-
-

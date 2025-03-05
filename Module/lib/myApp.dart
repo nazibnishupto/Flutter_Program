@@ -2,6 +2,7 @@ import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
+import 'Calculator_APP.dart';
 import 'Home.dart';
 
 class myApp extends StatelessWidget {
@@ -28,7 +29,7 @@ class myApp extends StatelessWidget {
                       foregroundColor: Colors.white))),
           title: 'Ostad Flutter app',
 
-          home: Module_11_Class_1(),
+          home: RestApiExample(),
         );
       }
     );
