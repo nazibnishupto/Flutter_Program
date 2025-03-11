@@ -29,7 +29,7 @@ class myApp extends StatelessWidget {
                       foregroundColor: Colors.white))),
           title: 'Ostad Flutter app',
 
-          home: CRUDexample(),
+          home: Water_Tracker_App(),
         );
       }
     );
