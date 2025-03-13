@@ -17,19 +17,20 @@ class myApp extends StatelessWidget {
           locale: DevicePreview.locale(context),
           builder: DevicePreview.appBuilder,
           theme: ThemeData(
+            brightness: Brightness.dark,
               primaryColor: Colors.red,
               appBarTheme: AppBarTheme(
                 color: Colors.blueGrey,
                 centerTitle: true,
               ),
-              scaffoldBackgroundColor: Colors.white,
+
               elevatedButtonTheme: ElevatedButtonThemeData(
                   style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.deepPurpleAccent,
                       foregroundColor: Colors.white))),
           title: 'Ostad Flutter app',
 
-          home: Water_Tracker_App(),
+          home: Expense_Tracker_App(),
         );
       }
     );
