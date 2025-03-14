@@ -18,11 +18,19 @@ class _Expense_Tracker_AppState extends State<Expense_Tracker_App> {
   ];
   double _total = 0.0;
 
+  void _addExpense(String title, double amount, DateTime date, String category){
+    setState(() {
+      _expense.add(expense(title: title, amount: amount, date: date, category: category));
+      _total += amount;
+    });
+  }
+
   void _showForm(BuildContext context){
     TextEditingController titleController = TextEditingController();
     TextEditingController amountController = TextEditingController();
 
     String selectedCategory = _category.first;
+    DateTime selectedDate = DateTime.now();
     
     showModalBottomSheet(context: context,
         isScrollControlled: true,
@@ -38,12 +46,14 @@ class _Expense_Tracker_AppState extends State<Expense_Tracker_App> {
               mainAxisSize: MainAxisSize.min,
               children: [
                 TextField(
+                  controller: titleController,
                   decoration: InputDecoration(
                     labelText: 'Title',
                   ),
                 ),
                 SizedBox(height: 10,),
                 TextField(
+                  controller: amountController,
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
                     labelText: 'Amount',
@@ -60,7 +70,15 @@ class _Expense_Tracker_AppState extends State<Expense_Tracker_App> {
                 SizedBox(height: 10,),
                 SizedBox(
                     width: double.infinity,
-                    child: ElevatedButton(onPressed: (){}, child: Text("Add Button"))
+                    child: ElevatedButton(
+                        onPressed: (){
+                          if (titleController.text.isEmpty || double.tryParse(amountController.text) == null){
+                            return ;
+                          }
+                          _addExpense(titleController.text, double.parse(amountController.text), selectedDate, selectedCategory);
+                        },
+                        child: Text("Add Button")
+                    )
                 ),
                 SizedBox(height: 10,),
               ],
