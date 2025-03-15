@@ -1,4 +1,8 @@
+
+
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
+
 import 'Models/expense.dart';
 
 class Expense_Tracker_App extends StatefulWidget {
@@ -22,6 +26,13 @@ class _Expense_Tracker_AppState extends State<Expense_Tracker_App> {
     setState(() {
       _expense.add(expense(title: title, amount: amount, date: date, category: category));
       _total += amount;
+    });
+  }
+
+  _deleteExpense(int index){
+    setState(() {
+      _total -= _expense[index].amount;
+      _expense.removeAt(index);
     });
   }
 
@@ -76,7 +87,11 @@ class _Expense_Tracker_AppState extends State<Expense_Tracker_App> {
                             return ;
                           }
                           _addExpense(titleController.text, double.parse(amountController.text), selectedDate, selectedCategory);
+                          titleController.clear();
+                          amountController.clear();
+                          Navigator.pop(context);
                         },
+
                         child: Text("Add Button")
                     )
                 ),
@@ -124,14 +139,22 @@ class _Expense_Tracker_AppState extends State<Expense_Tracker_App> {
             child: ListView.builder(
                 itemCount: _expense.length,
                 itemBuilder: (ctx, index) {
-                  return Card(
-                    child: ListTile(
-                      leading: CircleAvatar(
-                        backgroundColor: Colors.blue,
-                        child: Text(_expense[index].category),
+                  return Dismissible(
+                    key: Key(_expense[index].hashCode.toString()),
+                    background: Container(color: Colors.red),
+                    onDismissed: (direction)=> _deleteExpense(index),
+                    child: Card(
+                      child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundColor: Colors.blue,
+                          child: Text(_expense[index].category),
+                        ),
+                        title: Text(_expense[index].title),
+                        subtitle: Text(
+                            DateFormat.yMMMd().format(_expense[index].date),
+                        ),
+                        trailing: Text(_expense[index].amount.toString(), style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
                       ),
-                      title: Text(_expense[index].title),
-                      subtitle: Text(_expense[index].date.toString()),
                     ),
                   );
                 }
