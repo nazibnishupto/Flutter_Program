@@ -1,167 +1,68 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
-import 'Models/expense.dart';
-
-class Expense_Tracker_App extends StatefulWidget {
-  const Expense_Tracker_App({super.key});
+class TODO_app extends StatefulWidget {
+  const TODO_app({super.key});
 
   @override
-  State<Expense_Tracker_App> createState() => _Expense_Tracker_AppState();
+  State<TODO_app> createState() => _TODO_appState();
 }
 
-class _Expense_Tracker_AppState extends State<Expense_Tracker_App> {
-  final List<expense> _expense = [];
-  final List<String> _category = [
-    'Food',
-    'Transport',
-    'Entertainment',
-    'Bills'
-  ];
-  double _total = 0.0;
-
-  void _addExpense(String title, double amount, DateTime date, String category){
-    setState(() {
-      _expense.add(expense(title: title, amount: amount, date: date, category: category));
-      _total += amount;
-    });
-  }
-
-  _deleteExpense(int index){
-    setState(() {
-      _total -= _expense[index].amount;
-      _expense.removeAt(index);
-    });
-  }
-
-  void _showForm(BuildContext context){
-    TextEditingController titleController = TextEditingController();
-    TextEditingController amountController = TextEditingController();
-
-    String selectedCategory = _category.first;
-    DateTime selectedDate = DateTime.now();
-    
-    showModalBottomSheet(context: context,
-        isScrollControlled: true,
-        builder: (_){
-          return Padding(
-            padding: EdgeInsets.only(
-              bottom: 10,
-              left: 16,
-              right: 16,
-              top: 16,
-            ),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                TextField(
-                  controller: titleController,
-                  decoration: InputDecoration(
-                    labelText: 'Title',
-                  ),
-                ),
-                SizedBox(height: 10,),
-                TextField(
-                  controller: amountController,
-                  keyboardType: TextInputType.number,
-                  decoration: InputDecoration(
-                    labelText: 'Amount',
-                  ),
-                ),
-                SizedBox(height: 10,),
-                DropdownButtonFormField<String>(
-                    items: _category.map((category)=>DropdownMenuItem(value: category, child: Text(category),)).toList(),
-                    onChanged: (value) => selectedCategory = value!,
-                    decoration: InputDecoration(
-                      labelText: 'Category',
-                    ),
-                ),
-                SizedBox(height: 10,),
-                SizedBox(
-                    width: double.infinity,
-                    child: ElevatedButton(
-                        onPressed: (){
-                          if (titleController.text.isEmpty || double.tryParse(amountController.text) == null){
-                            return ;
-                          }
-                          _addExpense(titleController.text, double.parse(amountController.text), selectedDate, selectedCategory);
-                          titleController.clear();
-                          amountController.clear();
-                          Navigator.pop(context);
-                        },
-
-                        child: Text("Add Button")
-                    )
-                ),
-                SizedBox(height: 10,),
-              ],
-            ),
-          );
-        });
-    
-  }
-
+class _TODO_appState extends State<TODO_app> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blue.shade50,
       appBar: AppBar(
-        title: Text("Expense Tracker"),
-        backgroundColor: Colors.blueAccent,
-        actions: [
-          IconButton(onPressed: ()=> _showForm(context), icon: Icon(Icons.add)),
-        ],
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: IconButton(onPressed: ()=> _showForm(context), icon: Icon(Icons.add)),
+        title: Text("TODO APP"),
       ),
       body: Column(
         children: [
-          Center(
-            child: Card(
-                margin: EdgeInsets.all(16),
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20)),
-                child: Padding(
-                  padding: const EdgeInsets.all(30),
-                  child: Text(
-                    "Total: \$${_total}",
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                )),
-          ),
-          Expanded(
-            child: ListView.builder(
-                itemCount: _expense.length,
-                itemBuilder: (ctx, index) {
-                  return Dismissible(
-                    key: Key(_expense[index].hashCode.toString()),
-                    background: Container(color: Colors.red),
-                    onDismissed: (direction)=> _deleteExpense(index),
-                    child: Card(
-                      child: ListTile(
-                        leading: CircleAvatar(
-                          backgroundColor: Colors.blue,
-                          child: Text(_expense[index].category),
-                        ),
-                        title: Text(_expense[index].title),
-                        subtitle: Text(
-                            DateFormat.yMMMd().format(_expense[index].date),
-                        ),
-                        trailing: Text(_expense[index].amount.toString(), style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
-                      ),
-                    ),
-                  );
-                }
-            ),
+          SizedBox(height: 20,),
+          Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Container(
+                height: 80,
+                width: 150,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(8),
+                  boxShadow: [
+                    BoxShadow(color: Colors.black12, blurRadius: 4),
+                  ]
+                ),
+                child: Column(
+                  children: [
+                    Text("Active",style: TextStyle(fontSize: 23,fontWeight: FontWeight.w500),),
+                    Text("20",style: TextStyle(fontSize: 23,fontWeight: FontWeight.bold),),
+                  ],
+                ),
+              ),
+              Container(
+                height: 80,
+                width: 150,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(8),
+                    boxShadow: [
+                      BoxShadow(color: Colors.black12, blurRadius: 4),
+                    ]
+                ),
+                child: Column(
+                  children: [
+                    Text("Completed",style: TextStyle(fontSize: 23,fontWeight: FontWeight.w500),),
+                    Text("10",style: TextStyle(fontSize: 23,fontWeight: FontWeight.bold),),
+                  ],
+                ),
+              ),
+            ],
           )
         ],
       ),
+      floatingActionButton: FloatingActionButton(onPressed: (){}, child: Icon(Icons.add),),
     );
   }
 }
+
+

@@ -13,14 +13,15 @@ class myApp extends StatelessWidget {
     return Sizer(
       builder: (context, orientation, screenType) {
         return MaterialApp(
+          debugShowCheckedModeBanner: false,
           useInheritedMediaQuery: true,
           locale: DevicePreview.locale(context),
           builder: DevicePreview.appBuilder,
           theme: ThemeData(
-            brightness: Brightness.dark,
-              primaryColor: Colors.red,
+            brightness: Brightness.light,
+              primaryColor: Colors.orange,
               appBarTheme: AppBarTheme(
-                color: Colors.blueGrey,
+                color: Colors.orangeAccent,
                 centerTitle: true,
               ),
 
@@ -30,7 +31,7 @@ class myApp extends StatelessWidget {
                       foregroundColor: Colors.white))),
           title: 'Ostad Flutter app',
 
-          home: Expense_Tracker_App(),
+          home: TODO_app(),
         );
       }
     );
