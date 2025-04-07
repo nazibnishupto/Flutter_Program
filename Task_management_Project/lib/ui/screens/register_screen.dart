@@ -1,16 +1,16 @@
-import 'package:assignment/ui/screens/register_screen.dart';
+import 'package:assignment/ui/screens/login_screen.dart';
 import 'package:assignment/ui/widgets/screen_background.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
-class LoginScreen extends StatefulWidget {
-  const LoginScreen({super.key});
+class RegisterScreen extends StatefulWidget {
+  const RegisterScreen({super.key});
 
   @override
-  State<LoginScreen> createState() => _LoginScreenState();
+  State<RegisterScreen> createState() => _RegisterScreenState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
+class _RegisterScreenState extends State<RegisterScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,7 +23,7 @@ class _LoginScreenState extends State<LoginScreen> {
           const SizedBox(
             height: 200,
           ),
-          Text("Get Started With",
+          Text("Join With Us",
               style: Theme.of(context).textTheme.titleLarge),
           const SizedBox(
             height: 24,
@@ -31,6 +31,30 @@ class _LoginScreenState extends State<LoginScreen> {
           TextFormField(
             decoration: const InputDecoration(
               hintText: 'Email',
+            ),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          TextFormField(
+            decoration: const InputDecoration(
+              hintText: 'First Name',
+            ),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          TextFormField(
+            decoration: const InputDecoration(
+              hintText: 'Last Name',
+            ),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          TextFormField(
+            decoration: const InputDecoration(
+              hintText: 'Mobile',
             ),
           ),
           const SizedBox(
@@ -57,9 +81,6 @@ class _LoginScreenState extends State<LoginScreen> {
           Center(
             child: Column(
               children: [
-                TextButton(
-                    onPressed: _onTapForgetPasswordButton,
-                    child: Text("Forget Password?")),
                 RichText(
                     text: TextSpan(
                   style: const TextStyle(
@@ -67,13 +88,13 @@ class _LoginScreenState extends State<LoginScreen> {
                       fontWeight: FontWeight.w600,
                       fontSize: 14),
                   children: [
-                    const TextSpan(text: "Don't have account? "),
+                    const TextSpan(text: "Have account? "),
                     TextSpan(
-                      text: "Sign Up",
+                      text: "Sign In",
                       style: const TextStyle(
                           color: Colors.green, fontWeight: FontWeight.bold),
                       recognizer: TapGestureRecognizer()
-                        ..onTap = _onTapSignUpButton,
+                        ..onTap = _onTapSignInButton,
                     )
                   ],
                 )),
@@ -85,12 +106,11 @@ class _LoginScreenState extends State<LoginScreen> {
     )));
   }
 
-  void _onTapForgetPasswordButton() {}
-  void _onTapSignUpButton() {
+  void _onTapSignInButton() {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => RegisterScreen(),
+        builder: (context) => LoginScreen(),
       ),
     );
   }

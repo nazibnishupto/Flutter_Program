@@ -4,22 +4,25 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b2e05f5-ab7b-4f2b-b472-c872dd2b209a" name="Changes" comment="(home)">
-      <change afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_19_2025_11_22_AM_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_19_2025_11_22_AM__Changes_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_19_2025_11_23_AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_19_2025_11_23_AM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_19_2025_11_40_AM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_18_2025_10_48_AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_18_2025_10_48_AM__Changes_.xml" beforeDir="false" />
+    <list default="true" id="9b2e05f5-ab7b-4f2b-b472-c872dd2b209a" name="Changes" comment="ofc 25 mar">
+      <change afterPath="$PROJECT_DIR$/Task_management_Project/lib/ui/screens/register_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_management_Project/lib/ui/widgets/screen_background.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_23_2025_9_56_AM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_23_2025_9_56_AM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment/lib/Module_10_Assignment.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment/lib/module_10_Live_test.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Module/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cover.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Module/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ASSET/abcd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ASSET/cover.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Task_management_Project/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/ui/screens/login_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Task_management_Project/lib/ui/screens/login_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Task_management_Project/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/linux/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Task_management_Project/linux/flutter/generated_plugin_registrant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Task_management_Project/linux/flutter/generated_plugins.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Task_management_Project/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Task_management_Project/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/windows/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Task_management_Project/windows/flutter/generated_plugin_registrant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Task_management_Project/windows/flutter/generated_plugins.cmake" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +56,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/nazibnishupto/Flutter_Program.git&quot;,
-    &quot;accountId&quot;: &quot;71d60e62-8be1-495f-8d1a-74c5c5b63fd1&quot;
+    &quot;accountId&quot;: &quot;a30e8292-86dc-4a4e-9d4c-7bb24239e4cc&quot;
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
@@ -92,6 +95,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "io.flutter.reload.alreadyRun": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/Flutter Program/Task_management_Project/lib/ui/screens",
     "project.structure.last.edited": "Problems",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
@@ -99,11 +103,15 @@
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
-  <component name="RunManager" selected="Flutter.main.dart (2)">
-    <configuration name="Circuler_progress.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/test_app/lib/Circuler_progress.dart" />
-      <method v="2" />
-    </configuration>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Flutter Program\Task_management_Project\lib\ui\screens" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Flutter Program\Task_management_Project\assets\images" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Flutter.main.dart">
     <configuration name="Module_10_Assignment.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/Assignment/lib/Module_10_Assignment.dart" />
       <method v="2" />
@@ -116,17 +124,21 @@
       <option name="filePath" value="$PROJECT_DIR$/Module/lib/main.dart" />
       <method v="2" />
     </configuration>
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/Task_management_Project/lib/main.dart" />
+      <method v="2" />
+    </configuration>
     <configuration name="module_10_Live_test.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/Assignment/lib/module_10_Live_test.dart" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Flutter.main.dart" />
         <item itemvalue="Flutter.main.dart (2)" />
         <item itemvalue="Flutter.module_10_Live_test.dart" />
         <item itemvalue="Flutter.Module_10_Assignment.dart" />
         <item itemvalue="Flutter.main.dart (1)" />
-        <item itemvalue="Flutter.Circuler_progress.dart" />
       </list>
     </recent_temporary>
   </component>
@@ -339,7 +351,23 @@
       <option name="project" value="LOCAL" />
       <updated>1742706091066</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="ofc 24 mar">
+      <option name="closed" value="true" />
+      <created>1742806110908</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1742806110908</updated>
+    </task>
+    <task id="LOCAL-00027" summary="ofc 25 mar">
+      <option name="closed" value="true" />
+      <created>1742884628943</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1742884628943</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -358,6 +386,8 @@
     <MESSAGE value="assignment submission" />
     <MESSAGE value="water app (home)" />
     <MESSAGE value="(home)" />
-    <option name="LAST_COMMIT_MESSAGE" value="(home)" />
+    <MESSAGE value="ofc 24 mar" />
+    <MESSAGE value="ofc 25 mar" />
+    <option name="LAST_COMMIT_MESSAGE" value="ofc 25 mar" />
   </component>
 </project>
