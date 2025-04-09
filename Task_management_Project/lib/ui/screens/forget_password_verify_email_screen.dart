@@ -1,5 +1,4 @@
 import 'package:assignment/ui/screens/forget_password_pin_verification_screen.dart';
-import 'package:assignment/ui/screens/register_screen.dart';
 import 'package:assignment/ui/widgets/screen_background.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
