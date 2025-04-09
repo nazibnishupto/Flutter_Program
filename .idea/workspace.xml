@@ -5,21 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b2e05f5-ab7b-4f2b-b472-c872dd2b209a" name="Changes" comment="ofc 25 mar">
-      <change afterPath="$PROJECT_DIR$/Task_management_Project/lib/ui/screens/register_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_management_Project/lib/ui/widgets/screen_background.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_23_2025_9_56_AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_23_2025_9_56_AM__Changes_.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_management_Project/lib/ui/screens/forget_password_pin_verification_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_management_Project/lib/ui/screens/forget_password_verify_email_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Module/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_management_Project/ASSET/abcd.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_management_Project/ASSET/cover.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Task_management_Project/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/ui/screens/login_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Task_management_Project/lib/ui/screens/login_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/ui/screens/register_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Task_management_Project/lib/ui/screens/register_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Task_management_Project/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Task_management_Project/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Task_management_Project/linux/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Task_management_Project/linux/flutter/generated_plugin_registrant.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Task_management_Project/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Task_management_Project/linux/flutter/generated_plugins.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Task_management_Project/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Task_management_Project/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Task_management_Project/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Task_management_Project/pubspec.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Task_management_Project/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Task_management_Project/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Task_management_Project/windows/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Task_management_Project/windows/flutter/generated_plugin_registrant.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Task_management_Project/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Task_management_Project/windows/flutter/generated_plugins.cmake" afterDir="false" />
@@ -42,7 +39,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Module-12_Class-2_ToDo_APP" />
+        <entry key="$PROJECT_DIR$" value="module-9-class3-(Image-sizer-responsive_builder-device_preview)" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -71,38 +68,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Flutter.Circuler_progress.dart.executor": "Run",
-    "Flutter.Grid_View.dart.executor": "Run",
-    "Flutter.List_View.dart.executor": "Run",
-    "Flutter.Module_10_Assignment.dart.executor": "Run",
-    "Flutter.Tab_Bar.dart.executor": "Run",
-    "Flutter.main.dart (1).executor": "Run",
-    "Flutter.main.dart (2).executor": "Run",
-    "Flutter.main.dart.executor": "Run",
-    "Flutter.module_10_Live_test.dart.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "com.google.services.firebase.aqiPopupShown": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "Task-Management-Project",
-    "ignore.virus.scanning.warn.message": "true",
-    "io.flutter.reload.alreadyRun": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/Flutter Program/Task_management_Project/lib/ui/screens",
-    "project.structure.last.edited": "Problems",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "show.migrate.to.gradle.popup": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Flutter.Circuler_progress.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter.Grid_View.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter.List_View.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter.Module_10_Assignment.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter.Tab_Bar.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter.main.dart (1).executor&quot;: &quot;Run&quot;,
+    &quot;Flutter.main.dart (2).executor&quot;: &quot;Run&quot;,
+    &quot;Flutter.main.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter.module_10_Live_test.dart.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Task-Management-Project&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Flutter Program/Task_management_Project/lib/ui/screens&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Flutter Program\Task_management_Project\lib\ui\screens" />
@@ -135,9 +132,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Flutter.main.dart" />
-        <item itemvalue="Flutter.main.dart (2)" />
         <item itemvalue="Flutter.module_10_Live_test.dart" />
         <item itemvalue="Flutter.Module_10_Assignment.dart" />
+        <item itemvalue="Flutter.main.dart (2)" />
         <item itemvalue="Flutter.main.dart (1)" />
       </list>
     </recent_temporary>
