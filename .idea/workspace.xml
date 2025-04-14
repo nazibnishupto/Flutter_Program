@@ -4,22 +4,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b2e05f5-ab7b-4f2b-b472-c872dd2b209a" name="Changes" comment="ofc 25 mar">
-      <change afterPath="$PROJECT_DIR$/Task_management_Project/lib/ui/screens/forget_password_pin_verification_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task_management_Project/lib/ui/screens/forget_password_verify_email_screen.dart" afterDir="false" />
+    <list default="true" id="9b2e05f5-ab7b-4f2b-b472-c872dd2b209a" name="Changes" comment="ofc 13 april">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Task_management_Project/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/ui/screens/login_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Task_management_Project/lib/ui/screens/login_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/ui/screens/register_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Task_management_Project/lib/ui/screens/register_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_management_Project/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Task_management_Project/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_management_Project/linux/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Task_management_Project/linux/flutter/generated_plugin_registrant.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_management_Project/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Task_management_Project/linux/flutter/generated_plugins.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_management_Project/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Task_management_Project/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_management_Project/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Task_management_Project/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_management_Project/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Task_management_Project/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_management_Project/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Task_management_Project/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_management_Project/windows/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Task_management_Project/windows/flutter/generated_plugin_registrant.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task_management_Project/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Task_management_Project/windows/flutter/generated_plugins.cmake" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +44,9 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Module_8/lib/Home.dart" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -364,7 +353,39 @@
       <option name="project" value="LOCAL" />
       <updated>1742884628943</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="ofc 08 april">
+      <option name="closed" value="true" />
+      <created>1744172692070</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1744172692071</updated>
+    </task>
+    <task id="LOCAL-00029" summary="ofc 08 april">
+      <option name="closed" value="true" />
+      <created>1744173284933</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1744173284933</updated>
+    </task>
+    <task id="LOCAL-00030" summary="ofc 12 april">
+      <option name="closed" value="true" />
+      <created>1744448611004</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1744448611004</updated>
+    </task>
+    <task id="LOCAL-00031" summary="ofc 13 april">
+      <option name="closed" value="true" />
+      <created>1744524661275</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1744524661275</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -385,6 +406,9 @@
     <MESSAGE value="(home)" />
     <MESSAGE value="ofc 24 mar" />
     <MESSAGE value="ofc 25 mar" />
-    <option name="LAST_COMMIT_MESSAGE" value="ofc 25 mar" />
+    <MESSAGE value="ofc 08 april" />
+    <MESSAGE value="ofc 12 april" />
+    <MESSAGE value="ofc 13 april" />
+    <option name="LAST_COMMIT_MESSAGE" value="ofc 13 april" />
   </component>
 </project>
