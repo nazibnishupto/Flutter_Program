@@ -1,4 +1,7 @@
+import 'package:assignment/ui/screens/new_task_screen.dart';
 import 'package:flutter/material.dart';
+
+import '../widgets/tm_app_bar.dart';
 
 class MainBottomNavScreen extends StatefulWidget {
   const MainBottomNavScreen({super.key});
@@ -11,34 +14,19 @@ class _MainBottomNavScreenState extends State<MainBottomNavScreen> {
 
   int _selectedIndex = 0;
 
+  final List<Widget> _screen = [
+    NewTaskScreen(),
+    NewTaskScreen(),
+    NewTaskScreen(),
+    NewTaskScreen(),
+  ];
+
   @override
   Widget build(BuildContext context) {
 
-    TextTheme textTheme = Theme.of(context).textTheme;
-
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.green,
-        title: Row(
-          children: [
-            CircleAvatar(
-              radius: 18,
-            ),
-            SizedBox(width: 8,),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text("Nazib Hossen", style: textTheme.bodyLarge?.copyWith(
-                  color: Colors.white,
-                ),),
-                Text("nazib@gmail.com", style: textTheme.bodySmall?.copyWith(
-                  color: Colors.white,
-                ),)
-              ],
-            )
-          ],
-        ),
-      ),
+      appBar: TMAppBar(),
+      body: _screen[_selectedIndex],
       bottomNavigationBar: NavigationBar(
           selectedIndex: _selectedIndex,
           onDestinationSelected: (index) {
@@ -59,3 +47,4 @@ class _MainBottomNavScreenState extends State<MainBottomNavScreen> {
     );
   }
 }
+
