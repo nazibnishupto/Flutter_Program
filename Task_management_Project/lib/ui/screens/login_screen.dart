@@ -18,6 +18,8 @@ class _LoginScreenState extends State<LoginScreen> {
   final TextEditingController _passwordTEController = TextEditingController();
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
+  bool _obscureText = true;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,9 +51,20 @@ class _LoginScreenState extends State<LoginScreen> {
               height: 10,
             ),
             TextFormField(
+              obscureText: _obscureText,
               controller: _passwordTEController,
-              decoration: const InputDecoration(
+              decoration: InputDecoration(
                 hintText: 'Password',
+                suffixIcon: IconButton(
+                  icon: Icon(
+                    _obscureText ? Icons.visibility : Icons.visibility_off,
+                  ),
+                  onPressed: () {
+                    setState(() {
+                      _obscureText = !_obscureText;
+                    });
+                  },
+                ),
               ),
             ),
             const SizedBox(
@@ -99,13 +112,13 @@ class _LoginScreenState extends State<LoginScreen> {
     )));
   }
 
-  void _onTapSubmitButton(){
+  void _onTapSubmitButton() {
     Navigator.pushAndRemoveUntil(
       context,
       MaterialPageRoute(
         builder: (context) => MainBottomNavScreen(),
       ),
-        (predicate) => false,
+      (predicate) => false,
     );
   }
 
