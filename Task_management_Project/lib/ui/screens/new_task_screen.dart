@@ -1,3 +1,4 @@
+import 'package:assignment/ui/screens/add_new_task_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../widgets/summary_card.dart';
@@ -22,20 +23,29 @@ class _NewTaskScreenState extends State<NewTaskScreen> {
               primary: false,
               shrinkWrap: true,
               itemCount: 6,
-              itemBuilder: (context, index)
-              {
-                return TaskCard(chipText: 'New', chipColor: Colors.blueAccent,);
+              itemBuilder: (context, index) {
+                return TaskCard(
+                  chipText: 'New',
+                  chipColor: Colors.blueAccent,
+                );
               },
-              separatorBuilder: (context, index) => SizedBox(height: 8,),
+              separatorBuilder: (context, index) => SizedBox(
+                height: 8,
+              ),
             )
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: _onTapAddNewTask,
         child: Icon(Icons.add),
       ),
     );
+  }
+
+  void _onTapAddNewTask() {
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => AddNewTaskScreen()));
   }
 
   Widget _buildSummarySection() {
