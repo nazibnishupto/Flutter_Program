@@ -29,10 +29,6 @@ class _CancelledTaskScreenState extends State<CancelledTaskScreen> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: Icon(Icons.add),
-      ),
     );
   }
 }

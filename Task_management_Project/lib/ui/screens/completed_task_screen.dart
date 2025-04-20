@@ -29,10 +29,6 @@ class _CompletedTaskScreenState extends State<CompletedTaskScreen> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: Icon(Icons.add),
-      ),
     );
   }
 }

@@ -1,5 +1,5 @@
-name: assignment
-description: "Modules for Flutter Course"
+name: TM APP
+description: "Task Management App"
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -41,6 +41,7 @@ dependencies:
   http: ^1.3.0
   flutter_svg: ^2.0.17
   pin_code_fields: ^8.0.1
+  image_picker: ^1.1.2
 
 dev_dependencies:
   flutter_test:

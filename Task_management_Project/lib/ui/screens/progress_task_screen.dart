@@ -29,10 +29,6 @@ class _ProgressTaskScreenState extends State<ProgressTaskScreen> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: Icon(Icons.add),
-      ),
     );
   }
 }
