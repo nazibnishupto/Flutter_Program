@@ -52,7 +52,7 @@ class _NewTaskScreenState extends State<NewTaskScreen> {
     return const SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       child: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: EdgeInsets.all(8.0),
         child: Row(
           children: [
             SummaryCard(

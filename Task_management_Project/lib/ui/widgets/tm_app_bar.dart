@@ -18,7 +18,7 @@ class TMAppBar extends StatelessWidget implements PreferredSizeWidget {
         onTap: () {
           if(fromProfileScreen ?? false){
             return;
-          };
+          }
           _onTapProfileSection(context);
         },
         child: Row(
