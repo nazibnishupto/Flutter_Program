@@ -1,5 +1,10 @@
+import 'dart:convert';
+
 import 'package:assignment/ui/screens/update_profile_screen.dart';
 import 'package:flutter/material.dart';
+
+import '../controllers/auth_controller.dart';
+import '../screens/login_screen.dart';
 
 class TMAppBar extends StatelessWidget implements PreferredSizeWidget {
   const TMAppBar({
@@ -24,28 +29,28 @@ class TMAppBar extends StatelessWidget implements PreferredSizeWidget {
         child: Row(
           children: [
             CircleAvatar(
-              radius: 18,
+              radius: 16,
             ),
             SizedBox(
               width: 8,
             ),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  "Nazib Hossen",
-                  style: textTheme.bodyLarge?.copyWith(
-                    color: Colors.white,
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    AuthController.userModel?.fulName ?? 'Unknown',
+                    style: textTheme.bodyLarge?.copyWith(
+                      color: Colors.white,
+                    ),
                   ),
-                ),
-                Text(
-                  "nazib@gmail.com",
-                  style: textTheme.bodySmall?.copyWith(
-                    color: Colors.white,
+                  Text(
+                    AuthController.userModel?.email ?? 'Unknown',
+                    style: textTheme.bodySmall?.copyWith(color: Colors.white),
                   ),
-                )
-              ],
-            )
+                ],
+              ),
+            ),
           ],
         ),
       ),
@@ -56,6 +61,17 @@ class TMAppBar extends StatelessWidget implements PreferredSizeWidget {
     Navigator.push(context,
         MaterialPageRoute(builder: (context) => UpdateProfileScreen()));
   }
+
+  Future<void> _onTapLogOutButton(BuildContext context) async {
+    await AuthController.clearUserData();
+    Navigator.pushAndRemoveUntil(
+        context,
+        MaterialPageRoute(
+          builder: (context) => const LoginScreen(),
+        ),
+            (predicate) => false);
+  }
+
 
   @override
   // TODO: implement preferredSize

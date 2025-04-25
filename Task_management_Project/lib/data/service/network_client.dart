@@ -1,3 +1,5 @@
+import 'package:http/http.dart';
+
 import 'dart:convert';
 import 'package:logger/logger.dart';
 
@@ -54,7 +56,7 @@ class NetworkClient {
       Uri uri = Uri.parse(url);
       _preRequestLog(url, body: body);
       Response response = await post(uri,
-          headers: {'content-type': 'Application/json'},
+          headers: {'content-type': 'Application/json', },
           body: jsonEncode(body));
       _postRequestLog(url, response.statusCode,
           headers: response.headers, responseBody: response.body);

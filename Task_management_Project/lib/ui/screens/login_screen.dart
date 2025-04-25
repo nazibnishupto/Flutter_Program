@@ -5,8 +5,10 @@ import 'package:assignment/ui/widgets/screen_background.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
+import '../../data/models/login_model.dart';
 import '../../data/service/network_client.dart';
 import '../../data/utils/urls.dart';
+import '../controllers/auth_controller.dart';
 import '../widgets/centered_circular_progress_indicator.dart';
 import '../widgets/snack_bar_message.dart';
 
@@ -157,6 +159,9 @@ class _LoginScreenState extends State<LoginScreen> {
     _loginInProgress = false;
     setState(() {});
     if (response.isSuccess) {
+      LoginModel loginModel = LoginModel.fromJson(response.data!);
+      AuthController.saveUserInformation(loginModel.token, loginModel.userModel);
+
       Navigator.pushAndRemoveUntil(
         context,
         MaterialPageRoute(
