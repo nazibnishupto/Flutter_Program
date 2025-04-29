@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'package:assignment/ui/widgets/centered_circular_progress_indicator.dart';
 import 'package:assignment/ui/widgets/screen_background.dart';
 import 'package:assignment/ui/widgets/tm_app_bar.dart';
 import 'package:email_validator/email_validator.dart';
@@ -145,21 +146,19 @@ class _UpdateProfileScreenState extends State<UpdateProfileScreen> {
                     decoration: const InputDecoration(
                       hintText: 'Password',
                     ),
-                    validator: (String? value) {
-                      if ((value?.isEmpty ?? true) || (value!.length < 6)) {
-                        return 'Enter your password more than 6 letters';
-                      }
-                      return null;
-                    },
                   ),
                   const SizedBox(
                     height: 15,
                   ),
-                  ElevatedButton(
-                    onPressed: _onTapSubmitButton,
-                    child: const Icon(
-                      Icons.arrow_circle_right_outlined,
-                      color: Colors.white,
+                  Visibility(
+                    visible: _updateProfileInProgress=true,
+                    replacement: CenteredCircularProgressIndicator(),
+                    child: ElevatedButton(
+                      onPressed: _onTapSubmitButton,
+                      child: const Icon(
+                        Icons.arrow_circle_right_outlined,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                 ],

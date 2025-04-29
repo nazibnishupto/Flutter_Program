@@ -4,6 +4,8 @@ import 'ui/screens/splash_screen.dart';
 class TaskManagementApp extends StatefulWidget {
   const TaskManagementApp({super.key});
 
+  static final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
+
   @override
   State<TaskManagementApp> createState() => _TaskManagementAppState();
 }
@@ -12,6 +14,7 @@ class _TaskManagementAppState extends State<TaskManagementApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      navigatorKey: TaskManagementApp.navigatorKey,
       theme: ThemeData(
         colorSchemeSeed: Colors.green,
         inputDecorationTheme: InputDecorationTheme(

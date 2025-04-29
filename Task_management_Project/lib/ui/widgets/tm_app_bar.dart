@@ -51,6 +51,10 @@ class TMAppBar extends StatelessWidget implements PreferredSizeWidget {
                 ],
               ),
             ),
+            IconButton(
+                onPressed: () => _onTapLogOutButton(context),
+                icon: const Icon(Icons.logout)
+            )
           ],
         ),
       ),
@@ -74,6 +78,5 @@ class TMAppBar extends StatelessWidget implements PreferredSizeWidget {
 
 
   @override
-  // TODO: implement preferredSize
   Size get preferredSize => Size.fromHeight(kToolbarHeight);
 }
