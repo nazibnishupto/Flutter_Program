@@ -29,6 +29,17 @@ class UserModel{
   late final String lastName;
   late final String mobile;
   late final String createdDate;
+  late final String photo;
+
+  UserModel({
+    required this.id,
+    required this.email,
+    required this.firstName,
+    required this.lastName,
+    required this.mobile,
+    required this.createdDate,
+    required this.photo,
+  });
 
   UserModel.fromJson(Map<String, dynamic> jsonData){
     id = jsonData['_id'] ?? '';
@@ -37,6 +48,7 @@ class UserModel{
     lastName = jsonData['lastName'] ?? '';
     mobile = jsonData['mobile'] ?? '';
     createdDate = jsonData['createdDate'] ?? '';
+    photo = jsonData['photo'] ?? '';
   }
 
   Map<String, dynamic> toJson() {
@@ -47,11 +59,32 @@ class UserModel{
       'lastName': lastName,
       'mobile': mobile,
       'createdDate': createdDate,
+      'photo': photo,
     };
   }
 
   String get fulName {
     return '$firstName $lastName';
+  }
+
+  UserModel copyWith({
+    String? id,
+    String? email,
+    String? firstName,
+    String? lastName,
+    String? mobile,
+    String? createdDate,
+    String? photo,
+  }) {
+    return UserModel(
+      id: id ?? this.id,
+      email: email ?? this.email,
+      firstName: firstName ?? this.firstName,
+      lastName: lastName ?? this.lastName,
+      mobile: mobile ?? this.mobile,
+      createdDate: createdDate ?? this.createdDate,
+      photo: photo ?? this.photo,
+    );
   }
 
 }

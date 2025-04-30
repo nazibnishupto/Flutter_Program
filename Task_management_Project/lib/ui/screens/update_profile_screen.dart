@@ -7,12 +7,15 @@ import 'package:assignment/ui/widgets/tm_app_bar.dart';
 import 'package:email_validator/email_validator.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:flutter_image_compress/flutter_image_compress.dart';
 
 import '../../data/models/user_model.dart';
 import '../../data/service/network_client.dart';
 import '../../data/utils/urls.dart';
 import '../controllers/auth_controller.dart';
 import '../widgets/snack_bar_message.dart';
+
+import 'package:shared_preferences/shared_preferences.dart';
 
 class UpdateProfileScreen extends StatefulWidget {
   const UpdateProfileScreen({super.key});
@@ -254,6 +257,18 @@ class _UpdateProfileScreenState extends State<UpdateProfileScreen> {
     }
 
     if (_pickedImage != null) {
+      XFile? compressedImage = await compressImage(_pickedImage!);
+      if (compressedImage == null) {
+        showSnackBarMessage(context, "Failed to compress image", true);
+        _updateProfileInProgress = false;
+        setState(() {});
+        return;
+      }
+
+      final file = File(compressedImage.path);
+      final sizeInKB = file.lengthSync() / 1024;
+      print('Compressed image size: ${sizeInKB.toStringAsFixed(2)}KB');
+
       List<int> imageBytes = await _pickedImage!.readAsBytes();
       String encodedImage = base64Encode(imageBytes);
       requestBody['photo'] = encodedImage;
@@ -267,8 +282,31 @@ class _UpdateProfileScreenState extends State<UpdateProfileScreen> {
     _updateProfileInProgress = false;
     setState(() {});
     if (response.isSuccess) {
+      SharedPreferences prefs = await SharedPreferences.getInstance();
+      await prefs.setString('email', _emailTEController.text.trim());
+      await prefs.setString('firstName', _firstNameTEController.text.trim());
+      await prefs.setString('lastName', _lastNameTEController.text.trim());
+      await prefs.setString('mobile', _mobileTEController.text.trim());
+
+      if (_pickedImage != null) {
+        await prefs.setString('photo', requestBody['photo']);
+      }
+
+      AuthController.userModel = AuthController.userModel!.copyWith(
+        firstName: _firstNameTEController.text.trim(),
+        lastName: _lastNameTEController.text.trim(),
+        mobile: _mobileTEController.text.trim(),
+        photo: requestBody['photo'] ?? AuthController.userModel!.photo,
+      );
+
+      prefs.setString(
+        'user-data',
+        jsonEncode(AuthController.userModel!.toJson()),
+      );
+
       _passwordTEController.clear();
       showSnackBarMessage(context, 'User data updated successfully!');
+      Navigator.pop(context, AuthController.userModel);
     } else {
       showSnackBarMessage(context, response.errorMessage, true);
     }
@@ -282,6 +320,22 @@ class _UpdateProfileScreenState extends State<UpdateProfileScreen> {
       setState(() {
         _pickedImage = image;
       });
+    }
+  }
+
+  Future<XFile?> compressImage(XFile image) async {
+    try {
+      final result = await FlutterImageCompress.compressAndGetFile(
+        image.path,
+        '${image.path}_compressed.jpg',
+        quality: 50, // Quality percentage (0-100)
+        minWidth: 600, // Maximum width
+        minHeight: 600, // Maximum height
+      );
+      return result != null ? XFile(result.path) : null;
+    } catch (e) {
+      print('Image compression error: $e');
+      return null;
     }
   }
 
