@@ -1,5 +1,2 @@
-// ThemeData
-// Navigation
-// GridView
-// Pass Data in Navigation
+// Task manager with getx integration
 
