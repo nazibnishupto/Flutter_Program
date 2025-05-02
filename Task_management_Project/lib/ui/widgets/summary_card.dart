@@ -4,11 +4,11 @@ class SummaryCard extends StatelessWidget {
   const SummaryCard({
     super.key,
     required this.title,
-    required this.taskCount,
+    required this.count,
   });
 
   final String title;
-  final int taskCount;
+  final int count;
 
   @override
   Widget build(BuildContext context) {
@@ -16,11 +16,14 @@ class SummaryCard extends StatelessWidget {
       elevation: 0,
       color: Colors.white,
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 24,horizontal: 16),
+        padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
         child: Column(
           children: [
-            Text('$taskCount',style: TextStyle(fontSize: 24),),
-            Text(title,style: TextStyle(color: Colors.black54),),
+            Text(
+              '$count',
+              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+            ),
+            Text(title),
           ],
         ),
       ),
