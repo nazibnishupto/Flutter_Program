@@ -1,5 +1,6 @@
 import 'package:assignment/ui/screens/add_new_task_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../data/models/task_list_model.dart';
 import '../../data/models/task_model.dart';
@@ -7,6 +8,7 @@ import '../../data/models/task_status_count_list_model.dart';
 import '../../data/models/task_status_count_model.dart';
 import '../../data/service/network_client.dart';
 import '../../data/utils/urls.dart';
+import '../controllers/new_task_controller.dart';
 import '../widgets/centered_circular_progress_indicator.dart';
 import '../widgets/snack_bar_message.dart';
 import '../widgets/summary_card.dart';
@@ -47,25 +49,30 @@ class _NewTaskScreenState extends State<NewTaskScreen> {
               ),
               child: _buildSummarySection(),
             ),
-            Visibility(
-              visible: _getNewTasksInProgress == false,
-              replacement: const SizedBox(
-                height: 300,
-                child: CenteredCircularProgressIndicator(),
-              ),
-              child: ListView.separated(
-                itemCount: _newTaskList.length,
-                primary: false,
-                shrinkWrap: true,
-                itemBuilder: (context, index) {
-                  return TaskCard(
-                    taskStatus: TaskStatus.sNew,
-                    taskModel: _newTaskList[index],
-                    refreshList: _getAllNewTaskList,
-                  );
-                },
-                separatorBuilder: (context, index) => const SizedBox(height: 8),
-              ),
+            GetBuilder<NewTaskController>(
+              builder: (controller) {
+                return Visibility(
+                  visible: controller.getNewTaskInProgress == false,
+                  replacement: const SizedBox(
+                    height: 300,
+                    child: CenteredCircularProgressIndicator(),
+                  ),
+                  child: ListView.separated(
+                    itemCount: controller.newTaskList.length,
+                    primary: false,
+                    shrinkWrap: true,
+                    itemBuilder: (context, index) {
+                      return TaskCard(
+                        taskStatus: TaskStatus.sNew,
+                        taskModel: controller.newTaskList[index],
+                        refreshList: _getAllNewTaskList,
+                      );
+                    },
+                    separatorBuilder: (context, index) =>
+                    const SizedBox(height: 8),
+                  ),
+                );
+              },
             )
           ],
         ),
@@ -118,19 +125,11 @@ class _NewTaskScreenState extends State<NewTaskScreen> {
   }
 
   Future<void> _getAllNewTaskList() async {
-    _getNewTasksInProgress = true;
-    setState(() {});
-    final NetworkResponse response =
-    await NetworkClient.getRequest(url: Urls.newTaskListUrl);
-    if (response.isSuccess) {
-      TaskListModel taskListModel = TaskListModel.fromJson(response.data ?? {});
-      _newTaskList = taskListModel.taskList;
-    } else {
-      showSnackBarMessage(context, response.errorMessage, true);
+    final bool isSuccess = await Get.find<NewTaskController>().getNewTaskList();
+    if (!isSuccess) {
+      showSnackBarMessage(
+          context, Get.find<NewTaskController>().errorMessage!, true);
     }
-
-    _getNewTasksInProgress = false;
-    setState(() {});
   }
 
 }

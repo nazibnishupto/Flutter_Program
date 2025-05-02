@@ -4,6 +4,8 @@ import 'package:assignment/ui/screens/register_screen.dart';
 import 'package:assignment/ui/widgets/screen_background.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:assignment/ui/controllers/login_controller.dart';
 
 import '../../data/models/login_model.dart';
 import '../../data/service/network_client.dart';
@@ -25,6 +27,7 @@ class _LoginScreenState extends State<LoginScreen> {
   final TextEditingController _emailTEController = TextEditingController();
   final TextEditingController _passwordTEController = TextEditingController();
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+  final LoginController _loginController = Get.find<LoginController>();
 
   bool _obscureText = true;
 
@@ -96,12 +99,17 @@ class _LoginScreenState extends State<LoginScreen> {
               const SizedBox(
                 height: 15,
               ),
-              ElevatedButton(
-                onPressed: _onTapSubmitButton,
-                child: Icon(
-                  Icons.arrow_circle_right_outlined,
-                  color: Colors.white,
-                ),
+              GetBuilder<LoginController>(
+                  builder: (controller) {
+                    return Visibility(
+                      visible: controller.loginInProgress == false,
+                      replacement: const CenteredCircularProgressIndicator(),
+                      child: ElevatedButton(
+                        onPressed: _onTapSubmitButton,
+                        child: const Icon(Icons.arrow_circle_right_outlined),
+                      ),
+                    );
+                  }
               ),
               const SizedBox(
                 height: 32,
@@ -141,36 +149,26 @@ class _LoginScreenState extends State<LoginScreen> {
 
   void _onTapSubmitButton() {
     if (_formKey.currentState!.validate()) {
-      _loginUser();
+      _login();
     }
   }
 
-  Future<void> _loginUser() async{
-    _loginInProgress = true;
-    setState(() {});
-    Map<String, dynamic> requestBody = {
-      "email": _emailTEController.text.trim(),
-      "password": _passwordTEController.text
-    };
-    NetworkResponse response = await NetworkClient.postRequest(
-      url: Urls.loginUrl,
-      body: requestBody,
+  Future<void> _login() async {
+    final bool isSuccess = await _loginController.login(
+      _emailTEController.text.trim(),
+      _passwordTEController.text,
     );
-    _loginInProgress = false;
-    setState(() {});
-    if (response.isSuccess) {
-      LoginModel loginModel = LoginModel.fromJson(response.data!);
-      AuthController.saveUserInformation(loginModel.token, loginModel.userModel);
-
+    if (isSuccess) {
       Navigator.pushAndRemoveUntil(
         context,
         MaterialPageRoute(
-          builder: (context) => MainBottomNavScreen(),
+          builder: (context) => const MainBottomNavScreen(),
         ),
             (predicate) => false,
       );
     } else {
-      showSnackBarMessage(context, response.errorMessage, true);
+      showSnackBarMessage(
+          context, _loginController.errorMessage!, true);
     }
   }
 
@@ -204,3 +202,5 @@ class _LoginScreenState extends State<LoginScreen> {
     super.dispose();
   }
 }
+
+
