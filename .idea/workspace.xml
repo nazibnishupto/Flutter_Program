@@ -4,8 +4,201 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b2e05f5-ab7b-4f2b-b472-c872dd2b209a" name="Changes" comment="ofc 13 april">
+    <list default="true" id="9b2e05f5-ab7b-4f2b-b472-c872dd2b209a" name="Changes" comment="ofc 24 May">
+      <change afterPath="$PROJECT_DIR$/Google_Map/lib/homeScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_8/.dart_tool/dartpad/web_plugin_registrant.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_8/.dart_tool/package_config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_8/.dart_tool/package_config_subset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_8/.dart_tool/version" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_8/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_8/android/local.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_8/build/5a773e7089bb80d712543cb80df30fbd/_composite.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_8/build/5a773e7089bb80d712543cb80df30fbd/gen_dart_plugin_registrant.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_8/build/5a773e7089bb80d712543cb80df30fbd/gen_localizations.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_8/build/f872507f30e2ff2523f0f1d19160266e.cache.dill.track.dill" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_8/build/flutter_assets/AssetManifest.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_8/build/flutter_assets/AssetManifest.bin.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_8/build/flutter_assets/AssetManifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_8/build/flutter_assets/FontManifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_8/build/flutter_assets/NOTICES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_8/build/flutter_assets/fonts/MaterialIcons-Regular.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_8/build/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_8/build/flutter_assets/shaders/ink_sparkle.frag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_8/build/last_build_run.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_8/ios/Flutter/Generated.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_8/ios/Flutter/flutter_export_environment.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_8/ios/Runner/GeneratedPluginRegistrant.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_8/ios/Runner/GeneratedPluginRegistrant.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_8/macos/Flutter/ephemeral/Flutter-Generated.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_8/macos/Flutter/ephemeral/flutter_export_environment.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/.metadata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/analysis_options.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/android/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/android/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/android/app/src/debug/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/android/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/android/app/src/main/kotlin/com/example/assignment/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/android/app/src/main/res/drawable-v21/launch_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/android/app/src/main/res/drawable/launch_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/android/app/src/main/res/values-night/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/android/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/android/app/src/profile/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/android/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/android/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/android/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/assets/images/background.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/assets/images/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Flutter/AppFrameworkInfo.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Flutter/Debug.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Flutter/Release.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Runner/AppDelegate.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Runner/Base.lproj/LaunchScreen.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Runner/Base.lproj/Main.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Runner/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/Runner/Runner-Bridging-Header.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/ios/RunnerTests/RunnerTests.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/app.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/controller_binder.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/data/models/login_model.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/data/models/task_list_model.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/data/models/task_model.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/data/models/task_status_count_list_model.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/data/models/task_status_count_model.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/data/models/user_model.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/data/service/network_client.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/data/utils/urls.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/home_screen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/live_score_model.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/main.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/ui/controllers/auth_controller.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/ui/controllers/login_controller.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/ui/controllers/new_task_controller.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/ui/screens/add_new_task_screen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/ui/screens/cancelled_task_screen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/ui/screens/completed_task_screen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/ui/screens/forget_password_pin_verification_screen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/ui/screens/forget_password_verify_email_screen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/ui/screens/login_screen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/ui/screens/main_bottom_nav_screen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/ui/screens/new_task_screen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/ui/screens/progress_task_screen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/ui/screens/register_screen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/ui/screens/reset_password_screen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/ui/screens/splash_screen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/ui/screens/update_profile_screen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/ui/utils/assests_path.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/ui/widgets/centered_circular_progress_indicator.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/ui/widgets/screen_background.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/ui/widgets/snack_bar_message.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/ui/widgets/summary_card.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/ui/widgets/task_card.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/lib/ui/widgets/tm_app_bar.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/linux/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/linux/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/linux/flutter/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/linux/flutter/generated_plugin_registrant.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/linux/flutter/generated_plugins.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/linux/runner/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/linux/runner/main.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/linux/runner/my_application.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/linux/runner/my_application.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/macos/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/macos/Flutter/Flutter-Debug.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/macos/Flutter/Flutter-Release.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/macos/Runner.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/macos/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/macos/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/macos/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/macos/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/macos/Runner/AppDelegate.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/macos/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_1024.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_256.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/macos/Runner/Base.lproj/MainMenu.xib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/macos/Runner/Configs/AppInfo.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/macos/Runner/Configs/Debug.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/macos/Runner/Configs/Release.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/macos/Runner/Configs/Warnings.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/macos/Runner/DebugProfile.entitlements" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/macos/Runner/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/macos/Runner/MainFlutterWindow.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/macos/Runner/Release.entitlements" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/macos/RunnerTests/RunnerTests.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/pubspec.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/pubspec.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/test/widget_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/web/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/web/icons/Icon-192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/web/icons/Icon-512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/web/icons/Icon-maskable-192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/web/icons/Icon-maskable-512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/web/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/web/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/windows/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/windows/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/windows/flutter/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/windows/flutter/generated_plugin_registrant.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/windows/flutter/generated_plugins.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/windows/runner/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/windows/runner/Runner.rc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/windows/runner/flutter_window.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/windows/runner/flutter_window.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/windows/runner/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/windows/runner/resource.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/windows/runner/resources/app_icon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/windows/runner/runner.exe.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/windows/runner/utils.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/windows/runner/utils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/windows/runner/win32_window.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_management_Project/windows/runner/win32_window.h" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +218,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="module-9-class3-(Image-sizer-responsive_builder-device_preview)" />
+        <entry key="$PROJECT_DIR$" value="Project-with-firebase" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -77,7 +270,7 @@
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Task-Management-Project&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Google-Map-Practice&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
@@ -111,7 +304,7 @@
       <method v="2" />
     </configuration>
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/Task_management_Project/lib/main.dart" />
+      <option name="filePath" value="$PROJECT_DIR$/Google_Map/lib/main.dart" />
       <method v="2" />
     </configuration>
     <configuration name="module_10_Live_test.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
@@ -129,6 +322,9 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SwiftWorkspaceSettings">
+    <option name="detectedToolchain" value="true" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="9b2e05f5-ab7b-4f2b-b472-c872dd2b209a" name="Changes" comment="" />
@@ -385,7 +581,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744524661275</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="ofc 24 May">
+      <option name="closed" value="true" />
+      <created>1748055951997</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1748055951997</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -409,6 +613,7 @@
     <MESSAGE value="ofc 08 april" />
     <MESSAGE value="ofc 12 april" />
     <MESSAGE value="ofc 13 april" />
-    <option name="LAST_COMMIT_MESSAGE" value="ofc 13 april" />
+    <MESSAGE value="ofc 24 May" />
+    <option name="LAST_COMMIT_MESSAGE" value="ofc 24 May" />
   </component>
 </project>
